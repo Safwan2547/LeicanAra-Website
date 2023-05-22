@@ -1,21 +1,22 @@
 import React from 'react';
 import './tailwind.css';
-import './index.css'
+import './index.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cursor from './Modules/cursor';
+import LandingPage from './Pages/landing';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
 
 function App() {
   return (
-    <Router className="cursor-none">
+    <Router>
       <Cursor />
 
-
-    <div className=" cursor-none bg-MainBeige flex justify-center items-center h-screen prose lg:prose-xl">
-    <p className="text-Black text-center font-Satoshi text-9xl font-bold">Branding Meets Soul</p>
-  </div>
-
-  </Router>
+      <Routes>
+        
+        <Route exact path="/" element={<LandingPage />} />
+      </Routes>
+    </Router>
 );
 }
 export default App;
