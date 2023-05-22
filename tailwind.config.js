@@ -1,7 +1,14 @@
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  
+  purge: {
+    content: [
+      './src/**/*.{js,jsx,ts,tsx}',  // Include your project files
+    ],
+    options: {
+      safelist: ['index.css'],  // Add your global styles file to the safelist
+    },
+  },
  
   content: [ "./src/**/*.{js,jsx,ts,tsx}",],
   theme: {
