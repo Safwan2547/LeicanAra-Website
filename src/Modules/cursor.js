@@ -11,15 +11,13 @@ function Cursor() {
     const handleMouseMove = (e) => {
       
       setPosition({ x: e.clientX, y: e.clientY });
+      console.log(e.target.className)
     };
-    const handleMouseEnter = (e) => {
-      if (e.target.className.includes("triggerCursor")) {
+    
+    const handleMouseOver = (e) => {
+      if (e.target.className.includes('triggerCursor')) {
         setHoveringText(true);
-      }
-    };
-
-    const handleMouseLeave = (e) => {
-      if (e.target.className.includes("triggerCursor")) {
+      } else {
         setHoveringText(false);
       }
     };
@@ -27,10 +25,9 @@ function Cursor() {
      document.addEventListener('mousemove', handleMouseMove);
 
      // Mouse enter
-     document.addEventListener('mouseover', handleMouseEnter);
- 
+     document.addEventListener('mouseover', handleMouseOver);
      // Mouse leave
-     document.addEventListener('mouseout', handleMouseLeave);
+    //  document.addEventListener('mouseout', handleMouseLeave);
  
  
     return () => {
@@ -42,10 +39,11 @@ function Cursor() {
  
   return (
     <div id="Cursor" 
-      className={`${hoveringText ? 'opacity-80 w-1 h-18' : 'opacity-50 w-8 h-8'} border-MainBeige border-solid border-2 transition-cursor duration-250 cursor-none bg-black  fixed rounded-full z-50` }
+      className={` ${hoveringText ? 'opacity-80 w-1 h-20 border-black' : 'opacity-50 w-8 h-8'} border-MainBeige border-solid border-2 transition-cursor duration-350 cursor-none bg-black  absolute rounded-full z-50` }
       style={{
         left: position.x,
         top: position.y,
+        pointerEvents: "none"
       }}
     />
   );

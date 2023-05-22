@@ -1,4 +1,3 @@
-const { createJestConfig } = require('@craco/craco');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {

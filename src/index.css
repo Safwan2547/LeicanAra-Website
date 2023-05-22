@@ -469,8 +469,8 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.fixed {
-  position: fixed;
+.absolute {
+  position: absolute;
 }
 .z-50 {
   z-index: 50;
@@ -478,8 +478,8 @@ video {
 .flex {
   display: flex;
 }
-.h-16 {
-  height: 4rem;
+.h-20 {
+  height: 5rem;
 }
 .h-8 {
   height: 2rem;
@@ -489,9 +489,6 @@ video {
 }
 .w-1 {
   width: 0.25rem;
-}
-.w-16 {
-  width: 4rem;
 }
 .w-8 {
   width: 2rem;
@@ -507,6 +504,20 @@ video {
 }
 .rounded-full {
   border-radius: 9999px;
+}
+.border-2 {
+  border-width: 2px;
+}
+.border-solid {
+  border-style: solid;
+}
+.border-MainBeige {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 236 226 / var(--tw-border-opacity));
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .bg-MainBeige {
   --tw-bg-opacity: 1;
