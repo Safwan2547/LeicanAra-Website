@@ -22,13 +22,15 @@ module.exports = {
     transitionProperty: {
       'opacity': 'opacity',
       'size':'height,width',
-      'cursor':'size,width,height'
+      'cursor':'size,width,height,background-color'
       
     },
     cursor:['hover'],
     
     fontFamily: {
-      custom: ['Satoshi', 'sans-serif'],},
+      'Satoshi': ['Satoshi', 'sans-serif'],
+      'Lora': ['Lora,serif']},
+    
   },
   plugins: [
     require('@tailwindcss/typography')

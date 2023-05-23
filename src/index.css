@@ -472,8 +472,14 @@ video {
 .fixed {
   position: fixed;
 }
+.left-0 {
+  left: 0px;
+}
 .left-5 {
   left: 1.25rem;
+}
+.top-0 {
+  top: 0px;
 }
 .top-5 {
   top: 1.25rem;
@@ -484,14 +490,32 @@ video {
 .flex {
   display: flex;
 }
+.\!h-14 {
+  height: 3.5rem !important;
+}
 .\!h-20 {
   height: 5rem !important;
+}
+.h-full {
+  height: 100%;
 }
 .h-screen {
   height: 100vh;
 }
+.max-h-20 {
+  max-height: 5rem;
+}
 .\!w-1 {
   width: 0.25rem !important;
+}
+.\!w-14 {
+  width: 3.5rem !important;
+}
+.w-full {
+  width: 100%;
+}
+.w-screen {
+  width: 100vw;
 }
 .cursor-none {
   cursor: none;
@@ -505,19 +529,13 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
-.border-2 {
-  border-width: 2px;
-}
-.border-solid {
-  border-style: solid;
-}
 .\!border-black {
   --tw-border-opacity: 1 !important;
   border-color: rgb(0 0 0 / var(--tw-border-opacity)) !important;
 }
-.border-MainBeige {
-  --tw-border-opacity: 1;
-  border-color: rgb(239 236 226 / var(--tw-border-opacity));
+.\!bg-teal-600 {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(13 148 136 / var(--tw-bg-opacity)) !important;
 }
 .bg-MainBeige {
   --tw-bg-opacity: 1;
@@ -530,12 +548,16 @@ video {
 .p-3 {
   padding: 0.75rem;
 }
-.text-center {
-  text-align: center;
+.text-left {
+  text-align: left;
 }
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-9xl {
   font-size: 8rem;
@@ -546,6 +568,10 @@ video {
 }
 .font-medium {
   font-weight: 500;
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .\!opacity-80 {
   opacity: 0.8 !important;
@@ -558,13 +584,18 @@ video {
   transition-duration: 150ms;
 }
 .transition-cursor {
-  transition-property: size,width,height;
+  transition-property: size,width,height,background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+.\!duration-300 {
+  transition-duration: 300ms !important;
 }
 .duration-200 {
   transition-duration: 200ms;
 }
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
 #Cursor{
   cursor: none;
   opacity: 0.5;
@@ -572,6 +603,7 @@ video {
   height: 30px;
   transition-property: width,height,opacity;
 }
+
 .hover\:text-red-400:hover {
   --tw-text-opacity: 1;
   color: rgb(248 113 113 / var(--tw-text-opacity));
