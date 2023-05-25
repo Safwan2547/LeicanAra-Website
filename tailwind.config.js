@@ -6,11 +6,16 @@ module.exports = {
       './src/**/*.{js,jsx,ts,tsx}',  // Include your project files
     ],
     options: {
-      safelist: ['index.css'],  // Add your global styles file to the safelist
+     
     },
   },
- 
-  content: [ "./src/**/*.{js,jsx,ts,tsx}",],
+  screens: {
+    'sm': '640px',
+    'md': '768px',
+    'lg': '1024px',
+    'xl': '1280px',
+  },
+  
   theme: {
     extend: { 
       colors: {
@@ -29,10 +34,14 @@ module.exports = {
     
     fontFamily: {
       'Satoshi': ['Satoshi', 'sans-serif'],
-      'Lora': ['Lora,serif']},
+      'Lora': ['Lora,serif'],
+      'Erode':['Erode,serif'],
+    
+    },
     
   },
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    require('tailwindcss-animated')
   ],
 }}

@@ -67,12 +67,12 @@ function Cursor() {
 
   return (
     <div id="Cursor" 
-      className={`${hovering === 'button'
+      className= {`${hovering === 'button'
       ? '!opacity-80 !w-14 !h-14 !bg-teal-600'
       : hovering === 'text'
       ? '!opacity-80 !w-1 !h-20 !border-black'
       : ''}
-       transition-cursor !duration-300  bg-black  fixed rounded-full z-50` }
+       transition-cursor hidden sm:block !duration-300  bg-black  fixed rounded-full z-50` }
       style={{
         
         pointerEvents: "none"

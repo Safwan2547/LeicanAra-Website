@@ -1,6 +1,7 @@
 import React from 'react';
 import './tailwind.css';
 import './index.css';
+import 'tailwindcss/tailwind.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cursor from './Modules/cursor';
 import LandingPage from './Pages/landing';
