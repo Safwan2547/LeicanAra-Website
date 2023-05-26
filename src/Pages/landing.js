@@ -48,7 +48,8 @@ function LandingPage() {
             Branding Beyond The Ordinary!
           </p>
           <p className={`opacity-80 pl-2 font-Lora pt-3  text-lg   sm:hidden w-2/3 `}>
-          Drawing from the timeless art of storytelling, we see design as a tool to share profound narratives. 
+          We are an innovative,independent design studio based in
+          Halifax
           </p>
           <h1 className={`m-5 hidden sm:block textC absolute hover:text-red-400 text-Black transition duration-200 text-left font-Satoshi text-9xl font-bold`}>
             Branding Meets Soul
@@ -58,8 +59,7 @@ function LandingPage() {
           <h2 
           className="opacity-80  pt-3  text-xl  max-w-1/2  pr-5 max-w-10  textC 
            text-wrap  sm:max-h-20 sm:text-6xl font-Lora font-light sm:w-96
-            ">We are an innovative,independent design studio based in
-          Halifax</h2>
+            ">Drawing from the timeless art of storytelling, we see design as a tool to share profound narratives. </h2>
         </div>
         </div>
     );
