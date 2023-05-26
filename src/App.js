@@ -14,8 +14,8 @@ import Starfall from './Pages/StarFall';
 
 function App() {
   return (
-    <Router>
-    
+    <Router >
+    <div className="ml-5 mr-5 sm:ml-0  overflow-x-hidden bg-MainBeige cursor-none">
       {/* <Intro/> */}
       <Cursor />
       <Navbar />
@@ -27,6 +27,7 @@ function App() {
 
 
       </Routes>
+      </div>
     </Router>
 );
 }

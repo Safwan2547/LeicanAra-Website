@@ -30,6 +30,9 @@ module.exports = {
       'cursor':'size,width,height,background-color'
       
     },
+    transitionTimingFunction: {
+      'expo': 'cubic-bezier(.13,.93,.58,.57)',
+    },
     cursor:['hover'],
     
     fontFamily: {
