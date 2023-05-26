@@ -1,40 +1,20 @@
 import React, { useRef,useState, useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
+//FIX LOCOMOTIVE SCROLL
 
 function LandingPage() {
   const [isMounted1, setIsMounted1] = useState(false);
+ 
 
   useEffect(() => {
     const timer1 = setTimeout(() => setIsMounted1(true), 800);
-   
-
     return () => {
       clearTimeout(timer1);
     };
   }, []);
-    //## locomotive below
-//   const containerRef = useRef(null);
 
-//   useEffect(() => {
-//     let scroll;
-//     const timer = setTimeout(() => {
-//         scroll = new LocomotiveScroll({
-//             el: containerRef.current,
-//             smooth: true,
-//             direction:"vertical",
-//             getDirection:true,
-//             offset:["0%", "200%"],
-//             repeat:true,
-//             initPosition:{x:0,y:0},
-//         });
-//     }, 1000); // Adjust the delay as needed
-
-//     return () => {
-//         if (scroll) scroll.destroy();
-//         clearTimeout(timer);
-//     }
-// }, []);
-
+ 
+  
 
     return (
       //wrapper
@@ -55,14 +35,10 @@ function LandingPage() {
             Branding Meets Soul
           </h1>
         </div>
-        <div className=" flex-col sm:flex-row mt-10 lg:p-48 items-center   h-screen sm:w-screen flex  text-left ">
-          <h2 
-          className="opacity-80  pt-3  text-xl  max-w-1/2  pr-5 max-w-10  textC 
-           text-wrap  sm:max-h-20 sm:text-6xl font-Lora font-light sm:w-96
-            ">Drawing from the timeless art of storytelling, we see design as a tool to share profound narratives. </h2>
         </div>
-        </div>
+        
     );
+    
     
   }
 

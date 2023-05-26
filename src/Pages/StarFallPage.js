@@ -1,5 +1,5 @@
 import React from 'react';
-function Starfall() {
+function StarfallPage() {
     return (
       <div className=" bg-MainBeige cursor-none">
       <div className="pointer-events: none flex justify-center items-center h-screen prose lg:prose-xl ">
@@ -13,4 +13,4 @@ function Starfall() {
     
   }
 
-export default Starfall;
+export default StarfallPage;

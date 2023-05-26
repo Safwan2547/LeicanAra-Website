@@ -4,26 +4,25 @@ import './index.css';
 import 'tailwindcss/tailwind.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cursor from './Modules/cursor';
-import LandingPage from './Pages/landing';
 import Navbar from './Modules/nav';
-import Intro from './Pages/Intro';
-import Contact from './Pages/Contact';
-import Starfall from './Pages/StarFall';
-
+import Intro from './Pages/HomePage/Intro';
+import ContactPage from './Pages/ContactPage';
+import StarfallPage from './Pages/StarFallPage';
+import HomePage from './Pages/HomePage';
 
 
 function App() {
   return (
     <Router >
-    <div className="ml-5 mr-5 sm:ml-0  overflow-x-hidden bg-MainBeige cursor-none">
+    <div className="ml-5 mr-5 sm:ml-0  bg-MainBeige cursor-none">
       {/* <Intro/> */}
       <Cursor />
       <Navbar />
       
       <Routes>
-        <Route exact path="/" element={<LandingPage />} />
-        <Route exact path="/Contact" element={<Contact />} />
-        <Route exact path="/StarFall" element={<Starfall />} />
+        <Route exact path="/" element={<HomePage/>} />
+        <Route exact path="/ContactPage" element={<ContactPage />} />
+        <Route exact path="/StarFallPage" element={<StarfallPage />} />
 
 
       </Routes>

@@ -1,5 +1,5 @@
 import React from 'react';
-function Contact() {
+function ContactPage() {
     return (
       <div className=" bg-MainBeige cursor-none">
       <div className="pointer-events: none flex justify-center items-center h-screen prose lg:prose-xl ">
@@ -13,4 +13,4 @@ function Contact() {
     
   }
 
-export default Contact;
+export default ContactPage;
