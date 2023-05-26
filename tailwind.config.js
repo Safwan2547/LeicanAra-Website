@@ -3,7 +3,8 @@
 module.exports = {
   purge: {
     content: [
-      './src/**/*.{js,jsx,ts,tsx}',  // Include your project files
+      "./index.html",
+      "./src/**/*.{js,ts,jsx,tsx}", // Include your project files
     ],
     options: {
      
