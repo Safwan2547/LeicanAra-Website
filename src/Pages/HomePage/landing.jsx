@@ -7,7 +7,7 @@ function LandingPage() {
  
 
   useEffect(() => {
-    const timer1 = setTimeout(() => setIsMounted1(true), 800);
+   const timer1 = setTimeout(() => setIsMounted1(true), 800);
     return () => {
       clearTimeout(timer1);
     };
@@ -20,7 +20,7 @@ function LandingPage() {
       //wrapper
       <div  className="">
     
-      <div className={`transition-opacity ease-expo duration-1000 ${isMounted1 ? 'opacity-100' : 'opacity-0'}
+      <div className={`transition-opacity ease-elastic duration-1000 ${isMounted1 ? 'opacity-100' : 'opacity-0'}
        sm:ml-0 overflow-x-hidden flex flex-col basis-1  
        lg:flex-wrap justify-center sm:items-center items-start 
        h-screen prose prose-sm lg:prose-xl`}>

@@ -5,7 +5,6 @@ import 'tailwindcss/tailwind.css'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Cursor from './Modules/cursor';
 import Navbar from './Modules/nav';
-import Intro from './Pages/HomePage/Intro';
 import ContactPage from './Pages/ContactPage';
 import StarfallPage from './Pages/StarFallPage';
 import HomePage from './Pages/HomePage';
@@ -14,7 +13,7 @@ import HomePage from './Pages/HomePage';
 function App() {
   return (
     <Router >
-    <div className="ml-5 mr-5 sm:ml-0  bg-MainBeige cursor-none">
+    <div className="ml-5 mr-5 sm:m-0  bg-MainBeige cursor-none">
       {/* <Intro/> */}
       <Cursor />
       <Navbar />

@@ -33,6 +33,8 @@ module.exports = {
     },
     transitionTimingFunction: {
       'expo': 'cubic-bezier(.13,.93,.58,.57)',
+      'elastic':"cubic-bezier(0.25,0.4,0.55,1.4)",
+      'quart':"cubic-bezier(.62,.55,.68,1.12)"
     },
     cursor:['hover'],
     
