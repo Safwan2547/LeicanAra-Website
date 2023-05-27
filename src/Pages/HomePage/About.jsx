@@ -1,51 +1,40 @@
 import React, { useRef, useState, useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
+import Observer from '../../Modules/IntersectionObserver';
 
 function AboutPage() {
-  const containerRef = useRef(null);
-  let scroll;
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      scroll = new LocomotiveScroll({
-        el: containerRef.current,
-        smooth: true,
-      });
-    }, 1000);
-
-    return () => {
-      clearTimeout(timer);
-      if(scroll) scroll.destroy();
-    };
-  }, []);
-
-  useEffect(() => {
-    if(scroll) scroll.update();
-  });
-
+  
   return (
     <div 
-      ref={containerRef} 
-      data-scroll-section 
-      className="flex-col sm:flex-row sm:justify-between mt-10 sm:mt-1 sm:p-10 items-start h-screen sm:w-screen flex text-left"
+   
+      className=" mt-10  sm:m-10   text-left  overflow-x-hidden"
     >
-      <h2 
-        data-scroll 
-        data-scroll-speed="1" 
-        data-scroll-offset="10"
-        className="opacity-80 pt-3 text-xl max-w-1/2 pr-5 max-w-10 textC text-wrap hidden sm:block sm:max-h-20 sm:text-6xl font-Lora font-light sm:w-96"
+      
+      <div  
+      className='hidden  sm:flex justify-center items-end sm:w-screen 
+      h-screen  '>
+      
+      <h2 data-scroll-section
+        data-scroll-speed="2"
+      
+        className=" opacity-80 pt-3 text-xl max-w-3xl  mr-5 textC text-wrap absolute  sm:text-6xl font-Lora font-light"
       >
         We are an innovative, independent design studio based in Halifax
       </h2>
+
+      </div>
+      
+
+      <div className='  w-screen h-screen relative '>
       <h2 
-        data-scroll 
-        data-scroll-speed="3" 
-        data-scroll-delay="0.4" 
-        data-scroll-offset="50%"
-        className="opacity-80 pt-3 text-xl w-8/12 pr-5 max-w-10 textC text-wrap sm:max-h-20 sm:text-6xl font-Lora font-light sm:w-96"
+      
+        className="opacity-80  pt-3 text-xl w-8/12 pr-5 max-w-10 textC text-wrap sm:max-h-20 sm:text-6xl font-Lora font-light sm:w-96"
       >
         Drawing from the timeless art of storytelling, we see design as a tool to share profound narratives. 
       </h2>
+      
+      </div>
+      
     </div>
   );
 }

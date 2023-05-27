@@ -19,6 +19,7 @@ module.exports = {
   
   theme: {
     extend: { 
+      
       colors: {
       MainBeige: '#EFECE2',
       customGreen: '#00FF00',
@@ -36,7 +37,14 @@ module.exports = {
       'elastic':"cubic-bezier(0.25,0.4,0.55,1.4)",
       'quart':"cubic-bezier(.62,.55,.68,1.12)"
     },
+    
     cursor:['hover'],
+    minHeight: {
+      '1/4': '25%',
+      '1/2': '50%',
+      '3/4': '75%',
+      '75vh':'75vh'
+    },
     
     fontFamily: {
       'Satoshi': ['Satoshi', 'sans-serif'],
@@ -44,6 +52,8 @@ module.exports = {
       'Erode':['Erode,serif'],
     
     },
+    
+    
     
   },
   plugins: [

@@ -10,3 +10,22 @@
   height: 30px;
   transition-property: width,height,opacity;
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+}
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
