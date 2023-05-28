@@ -22,8 +22,10 @@ module.exports = {
       
       colors: {
       MainBeige: '#EFECE2',
-      customGreen: '#00FF00',
-      customBlue: '#0000FF',
+      customTeal: '#003847',
+      customTealAlpha:"#00384780",
+      customBurgandy: '#470F00',
+
 
     },
     transitionProperty: {

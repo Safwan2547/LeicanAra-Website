@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <nav className={` transition-opacity ease-expo duration-1000  ${isMounted ? 'opacity-100' : 'opacity-0'} 
         flex align-middle justify-between cursor-none fixed top-5 left-5 right-5 sm:top-8 sm:mr-5 sm:ml-5 z-10`} >
-            <Link to="/" className='transform transition-transform duration-500 hover:scale-105 buttonC font-Satoshi text-xl sm:text-3xl font-medium cursor-none'>LeicanAra</Link>
+            <Link to="/" className='transform transition-transform duration-500 hover:scale-105 hover:text-customTeal hover:opacity-80 buttonC font-Satoshi text-xl sm:text-3xl font-medium cursor-none'>LeicanAra</Link>
             <div className="links flex justify-between items-center">
             <Link to="" className=' opacity-80 sm:hidden bg-none  text-white font-bold w-6 h-6 p-1 rounded-full relative'>
             

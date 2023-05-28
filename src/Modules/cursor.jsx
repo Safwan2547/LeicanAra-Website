@@ -60,9 +60,9 @@ function Cursor() {
   return (
     <div id="Cursor" 
       className= {`${hovering === 'button'
-      ? '!opacity-80 !w-14 !h-14 !bg-teal-600'
+      ? '!opacity-80 !w-14 !h-14 !bg-customTeal'
       : hovering === 'text'
-      ? '!opacity-80 !w-1 !h-20 !border-black'
+      ? '!opacity-80 !w-1 !h-20 !border-customTeal'
       : ''}
        transition-cursor hidden sm:block !duration-300  bg-black  fixed rounded-full z-50` }
       style={{
