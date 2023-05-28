@@ -31,7 +31,8 @@ module.exports = {
     transitionProperty: {
       'opacity': 'opacity',
       'size':'height,width',
-      'cursor':'size,width,height,background-color'
+      'cursor':'size,width,height,background-color',
+      'button':'transform,color,height,width,background-color'
       
     },
     transitionTimingFunction: {
