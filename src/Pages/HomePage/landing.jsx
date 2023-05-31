@@ -24,7 +24,7 @@ function LandingPage() {
       <div  className={`transition-opacity ease-elastic duration-1000 ${isMounted1 ? 'opacity-100' : 'opacity-0'}
        sm:ml-0 overflow-x-hidden flex flex-col basis-1  
        lg:flex-wrap justify-center sm:items-center items-start 
-       h-screen prose prose-sm lg:prose-xl `}>
+       h-screen prose prose-sm lg:prose-xl`}>
       <p className={` h-1/3  w-1/2   top-24  block sm:hidden textC transition duration-200 text-left font-Satoshi text-5xl`}>
             Branding Beyond The Ordinary!
           </p>
@@ -32,7 +32,7 @@ function LandingPage() {
           We are an innovative,independent design studio based in
           Halifax
           </p>
-          <h1 data-scroll  className={`m-5 hidden sm:flex textC absolute  hover:text-customTeal hover:opacity-70 text-Black transition duration-200 text-left font-Satoshi text-9xl font-bold`}>
+          <h1 data-scroll  className={`m-5 hidden sm:flex textC absolute  hover:text-customTeal hover:opacity-80 text-Black transition-text duration-200 text-left font-Satoshi text-9xl font-bold`}>
             Branding Meets Soul
           </h1>
         </div>
