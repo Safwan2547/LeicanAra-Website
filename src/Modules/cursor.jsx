@@ -60,11 +60,11 @@ function Cursor() {
   return (
     <div id="Cursor" 
       className= {`${hovering === 'button'
-      ? '!opacity-80 !w-0 !h-0 !bg-customTeal'
+      ? '!opacity-80 !w-0 !h-0 !bg-LunarTwilight'
       : hovering === 'text'
-      ? '!opacity-80 !w-1 !h-20 !border-black !bg-black'
+      ? '!opacity-80 !w-1 !h-20 !border-NightFall !bg-NightFall'
       : ''}
-       transition-cursor hidden sm:block !duration-300  bg-customTeal  fixed rounded-full z-50` }
+       transition-cursor hidden sm:block !duration-300  bg-LunarTwilight  fixed rounded-full z-50` }
       style={{
      
         pointerEvents: "none"

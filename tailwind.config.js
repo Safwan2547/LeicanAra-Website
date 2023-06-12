@@ -21,8 +21,10 @@ module.exports = {
     extend: { 
       
       colors: {
-      MainBeige: '#EFECE2',
+      MainBeige: '#EFECE3',
       customTeal: '#003847',
+      LunarTwilight:"#2f4858",
+      NightFall:"#141414",
       customTealAlpha:"#00384780",
       customBurgandy: '#470F00',
 

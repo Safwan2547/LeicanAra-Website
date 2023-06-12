@@ -2,6 +2,7 @@ import React, { useState,useEffect,useRef,Link } from 'react';
 import Intro from './HomePage/Intro';
 import LandingPage from './HomePage/landing';
 import AboutPage from './HomePage/About';
+import ProjectsSection from './HomePage/Projects';
 import IntroParent from './HomePage/IntroParent';
 import LocomotiveScroll from 'locomotive-scroll';
 import useIntersectionObserver from '../Modules/IntersectionObserver';
@@ -43,7 +44,9 @@ function HomePage() {
         ref={containerRef} 
         data-scroll-container >
           <LandingPage/>
+
           <AboutPage />
+          <ProjectsSection/>
         </div>
     
   
