@@ -44,7 +44,7 @@ function HomePage() {
         ref={containerRef} 
         data-scroll-container >
           <LandingPage/>
-
+        
           <AboutPage />
           <ProjectsSection/>
         </div>
