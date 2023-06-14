@@ -559,6 +559,11 @@ video {
 .justify-between{
   justify-content: space-between;
 }
+.space-x-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2rem * var(--tw-space-x-reverse));
+  margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
+}
 .overflow-x-hidden{
   overflow-x: hidden;
 }
@@ -764,6 +769,9 @@ video {
 .duration-200{
   transition-duration: 200ms;
 }
+.duration-300{
+  transition-duration: 300ms;
+}
 .duration-500{
   transition-duration: 500ms;
 }
@@ -772,9 +780,6 @@ video {
 }
 .ease-expo{
   transition-timing-function: cubic-bezier(.13,.93,.58,.57);
-}
-.ease-in-out{
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #Cursor{
