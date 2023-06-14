@@ -10,6 +10,15 @@
   height: 30px;
   transition-property: width,height,opacity;
 }
+.textC{
+
+}
+.faq-h3 {
+  @apply textC transition duration-200 sm:hover:text-LunarTwilight text-left font-Satoshi sm:text-5xl text-3xl font-bold
+}
+.faq-P{
+  @apply textC transition duration-200 mt-5 sm:hover:text-LunarTwilight text-xl sm:text-3xl font-Lora font-normal
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;

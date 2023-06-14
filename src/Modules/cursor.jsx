@@ -28,6 +28,10 @@ function Cursor() {
 
 
       }
+      else if(e.target.className.includes('textP')){
+        setHovering('textP');
+        console.log("textP");
+      }
       else{
         setHovering(null)
       }
@@ -62,7 +66,9 @@ function Cursor() {
       className= {`${hovering === 'button'
       ? '!opacity-80 !w-0 !h-0 !bg-LunarTwilight'
       : hovering === 'text'
-      ? '!opacity-80 !w-1 !h-20 !border-NightFall !bg-NightFall'
+      ? '!opacity-80 !w-1 !h-24 !border-NightFall !bg-NightFall'
+      : hovering === 'textP'
+      ? '!opacity-80 !w-1 !h-14 !border-NightFall !bg-NightFall'
       : ''}
        transition-cursor hidden sm:block !duration-300  bg-LunarTwilight  fixed rounded-full z-50` }
       style={{

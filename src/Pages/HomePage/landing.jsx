@@ -26,7 +26,7 @@ function LandingPage() {
        lg:flex-wrap justify-center sm:items-center items-start 
        h-screen prose prose-sm lg:prose-xl text-NightFall`}>
       <p className={` h-1/3  w-1/2   top-24  block sm:hidden textC transition duration-200 text-left font-Satoshi text-5xl`}>
-            Branding Beyond The Ordinary!
+            Branding Meets Soul
           </p>
           <p className={`opacity-80 pl-2 font-Lora pt-3  text-lg   sm:hidden w-2/3 `}>
           We are an innovative,independent design studio based in
