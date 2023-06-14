@@ -8,7 +8,7 @@ import Navbar from './Modules/nav';
 import ContactPage from './Pages/ContactPage';
 import StarfallPage from './Pages/StarFallPage';
 import HomePage from './Pages/HomePage';
-
+import FAQPage from './Pages/FAQPage';
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
         <Route exact path="/ContactPage" element={<ContactPage />} />
+        <Route exact path="/FAQPage" element={<FAQPage />} />
         <Route exact path="/StarFallPage" element={<StarfallPage />} />
 
 
