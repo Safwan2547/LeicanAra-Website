@@ -7,7 +7,7 @@ function LandingPage() {
  
 
   useEffect(() => {
-   const timer1 = setTimeout(() => setIsMounted1(true), 800);
+   const timer1 = setTimeout(() => setIsMounted1(true), 500);
     return () => {
       clearTimeout(timer1);
     };
@@ -29,7 +29,7 @@ function LandingPage() {
             Branding Meets Soul
           </p>
           <p className={`opacity-80 pl-2 font-Lora pt-3  text-lg   sm:hidden w-2/3 `}>
-          We are an innovative,independent design studio based in
+          We are an innovative,independent creative studio based in
           Halifax
           </p>
           <h1 data-scroll  className={`text-NightFall m-5 hidden sm:flex textC absolute  hover:text-LunarTwilight  text-Black transition-text duration-200 text-left font-Satoshi text-9xl font-bold`}>

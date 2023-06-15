@@ -13,10 +13,11 @@ import FAQPage from './Pages/FAQPage';
 function App() {
   return (
     <Router >
-    <div className="ml-5 mr-5 sm:m-0  bg-MainBeige cursor-none">
+    <div className=" sm:m-0  bg-MainBeige cursor-none">
       {/* <Intro/> */}
       <Cursor />
       <Navbar />
+      
       
       <Routes>
         <Route exact path="/" element={<HomePage/>} />
@@ -25,7 +26,10 @@ function App() {
         <Route exact path="/StarFallPage" element={<StarfallPage />} />
 
 
+
       </Routes>
+      
+      
       </div>
     </Router>
 );

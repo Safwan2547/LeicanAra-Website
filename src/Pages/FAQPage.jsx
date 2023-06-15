@@ -1,12 +1,13 @@
 import React,{useState,useEffect} from 'react';
+import Footer from '../Modules/Footer';
 function FAQPage() {
     const [isMounted1, setIsMounted1] = useState(false);
     const [isMounted2, setIsMounted2] = useState(false);
 
 
     useEffect(() => {
-        const timer1 = setTimeout(() => setIsMounted1(true), 500);
-        const timer2 = setTimeout(() => setIsMounted2(true), 1000);
+        const timer1 = setTimeout(() => setIsMounted1(true), 300);
+        const timer2 = setTimeout(() => setIsMounted2(true), 600);
          return () => {
            clearTimeout(timer1);
            clearTimeout(timer2);
@@ -16,11 +17,11 @@ return(
     <div className=" bg-MainBeige cursor-none">
       
 
-    <div className={`w-full transition-opacity ease-elastic duration-1000 ${isMounted1 ? 'opacity-100' : 'opacity-0'} flex justify-center align-middle items-start flex-col sm:p-[10%]  mt-[35%] sm:mt-[0] prose sm:prose-xl mb-[10%]`}>
-        <p className=" textC sm:hover:text-LunarTwilight text-Black transition duration-200 text-left font-Satoshi text-7xl sm:text-9xl font-bold">
-          FAQs
+    <div className={`pl-5 pr-5 w-full transition-opacity ease-elastic duration-1000 ${isMounted1 ? 'opacity-100' : 'opacity-0'} flex justify-center align-middle items-start flex-col sm:p-[10%]  mt-[35%] sm:mt-[0] prose sm:prose-xl mb-[10%]`}>
+        <p className=" textC sm:hover:text-LunarTwilight transition duration-200 text-left font-Satoshi text-7xl sm:text-9xl font-medium text-NightFall">
+          FAQs<span className='font-Lora'>:</span>
         </p>
-        <div className={`transition-opacity ease-elastic duration-1000 ${isMounted2 ? 'opacity-100' : 'opacity-0'} flex flex-col flex-wrap sm:w-full w-full mt-20 justify-between items-start space-y-20`}>
+        <div className={`transition-opacity ease-elastic duration-1000 ${isMounted2 ? 'opacity-100' : 'opacity-0'} flex flex-col flex-wrap sm:w-full w-full mt-5 sm:mt-10 justify-between items-start space-y-8 sm:space-y-12`}>
             <div className="">
         <h3 className="faq-h3 textP">Hello! Are you a big company?</h3>
         <p className="faq-P textP">Nope! We are a small design studio!
@@ -62,8 +63,13 @@ return(
 
         </div>
       </div>
+      <Footer/>
+      
+      
      
       </div>
+      
+
 
 );
 

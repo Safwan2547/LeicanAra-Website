@@ -6,6 +6,7 @@ import ProjectsSection from './HomePage/Projects';
 import IntroParent from './HomePage/IntroParent';
 import LocomotiveScroll from 'locomotive-scroll';
 import useIntersectionObserver from '../Modules/IntersectionObserver';
+import Footer from '../Modules/Footer';
 
 function HomePage() {
   const containerRef = useRef(null);
@@ -47,6 +48,7 @@ function HomePage() {
           
           <AboutPage />
           <ProjectsSection/>
+          <Footer/>
         </div>
     
   

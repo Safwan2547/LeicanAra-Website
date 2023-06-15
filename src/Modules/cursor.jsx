@@ -32,6 +32,10 @@ function Cursor() {
         setHovering('textP');
         console.log("textP");
       }
+      else if(e.target.className.includes('footerC')){
+        setHovering('footerC');
+        console.log("footerC");
+      }
       else{
         setHovering(null)
       }
@@ -68,7 +72,9 @@ function Cursor() {
       : hovering === 'text'
       ? '!opacity-80 !w-1 !h-24 !border-NightFall !bg-NightFall'
       : hovering === 'textP'
-      ? '!opacity-80 !w-1 !h-14 !border-NightFall !bg-NightFall'
+      ? '!opacity-80 !w-1 !h-24 !border-NightFall !bg-NightFall'
+      // : hovering === 'footerC'
+      // ? '!opacity-80 !w-7 !h-7 !border-MainBeige !bg-MainBeige'
       : ''}
        transition-cursor hidden sm:block !duration-300  bg-LunarTwilight  fixed rounded-full z-50` }
       style={{

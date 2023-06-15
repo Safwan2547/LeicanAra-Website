@@ -8,16 +8,16 @@
   opacity: 0.5;
   width:  30px;
   height: 30px;
-  transition-property: width,height,opacity;
+  transition-property: width,height,opacity,background-color,border-color;
 }
 .textC{
 
 }
 .faq-h3 {
-  @apply textC transition duration-200 sm:hover:text-LunarTwilight text-left font-Satoshi sm:text-5xl text-3xl font-bold
+  @apply textC transition duration-200 sm:hover:text-LunarTwilight text-NightFall text-left font-Satoshi opacity-90 sm:text-4xl text-3xl font-bold
 }
 .faq-P{
-  @apply textC transition duration-200 mt-5 sm:hover:text-LunarTwilight text-xl sm:text-3xl font-Lora font-normal
+  @apply textC transition duration-200 sm:mt-3 mt-2 sm:hover:text-LunarTwilight text-NightFall opacity-[85%] text-xl sm:text-2xl font-Lora font-normal
 }
 @keyframes fadeIn {
   0% {
