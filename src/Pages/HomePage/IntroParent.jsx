@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Intro from './intro';
+import Intro from './Intro';
 import LandingPage from './landing';
 
 const IntroParent = () => {

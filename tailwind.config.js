@@ -66,4 +66,8 @@ module.exports = {
     require('@tailwindcss/typography'),
     require('tailwindcss-animated')
   ],
+    corePlugins: {
+    // ...
+    fontSmoothing: true, // add this
+  },
 }}

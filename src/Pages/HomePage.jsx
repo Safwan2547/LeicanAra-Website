@@ -14,23 +14,23 @@ function HomePage() {
   <useIntersectionObserver/>
 
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      scroll = new LocomotiveScroll({
-        el: containerRef.current,
-        smooth: true,
-       lerp:0.1,
-       multiplier:0.7,
-       gestureDirection:"vertical"
-      });
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     scroll = new LocomotiveScroll({
+  //       el: containerRef.current,
+  //       smooth: true,
+  //      lerp:0.1,
+  //      multiplier:0.7,
+  //      gestureDirection:"vertical"
+  //     });
 
-    }, 1000);
+  //   }, 1000);
 
-    return () => {
-      clearTimeout(timer);
-      if(scroll) scroll.destroy();
-    };
-  }, []);
+  //   return () => {
+  //     clearTimeout(timer);
+  //     if(scroll) scroll.destroy();
+  //   };
+  // }, []);
 
   useEffect(() => {
     if(scroll) scroll.update();
@@ -43,7 +43,7 @@ function HomePage() {
     
         <div
         ref={containerRef} 
-        data-scroll-container >
+        data-scroll-container className="pl-5 pr-5 sm:pl-10 sm:pr-10" >
           <LandingPage/>
           
           <AboutPage />
