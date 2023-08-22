@@ -20,6 +20,24 @@ function LandingPage() {
     return (
       //wrapper
       <div data-scroll-section  className="">
+        <video
+        autoPlay
+        loop
+        muted
+        style={{
+          position: 'absolute',
+          width: '100%',
+          left: '50%',
+          top: '50%',
+          height: '100%',
+          objectFit: 'cover',
+          transform: 'translate(-50%, -50%)',
+          zIndex: '0',
+        }}
+      >
+        <source src="./src/Assets/WebsiteTest.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
       <div  className={`transition-opacity ease-elastic duration-1000 ${isMounted1 ? 'opacity-100' : 'opacity-0'}
        sm:ml-0 overflow-x-hidden flex flex-col 
        sm:flex-wrap justify-center  sm:items-center   sm:justify-items-start
