@@ -9,6 +9,7 @@
     "gsap": "^3.11.5",
     "http-server": "^14.1.1",
     "locomotive-scroll": "^4.1.4",
+    "motion": "^10.16.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
@@ -50,7 +51,7 @@
     "process": "^0.11.10",
     "tailwindcss": "^3.3.2",
     "tailwindcss-animated": "^1.0.1",
-    "vite": "^4.4.7",
+    "vite": "^4.4.9",
     "vite-plugin-compression": "^0.5.1",
     "vite-plugin-svgr": "^3.2.0",
     "vite-tsconfig-paths": "^4.2.0"

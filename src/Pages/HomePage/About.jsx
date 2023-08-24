@@ -1,8 +1,42 @@
 import React, { useRef, useState, useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
 import Observer from '../../Modules/IntersectionObserver';
+import { animate,spring, scroll, inView,glide } from "motion"
+
 
 function AboutPage() {
+  const boxRef = useRef(null);
+
+  useEffect(() => {
+    // Ensure the ref is set
+    if (boxRef.current) {
+      // Define the callback
+      const callback = (info) => {
+        animate(info.target,
+          { y:-100, opacity: 1},
+          {easing:glide({
+            velocity: -120,
+            min: -200,
+            bounceStiffness: 100,
+            bounceDamping: 20
+          })}
+          // { easing: spring({ velocity: 1000 },{ damping: 500 },{mass:100000}),duration:200 }
+         
+        );
+      };
+
+      const options = {
+        margin: "0px 0px -30% 0px",
+
+      };
+
+      // Call the inView function with the options
+      const stop = inView(boxRef.current, callback, options);
+
+      // Return the cleanup function
+      return () => stop();
+    }
+  }, []);
   
   return (
     <div 
@@ -16,8 +50,10 @@ function AboutPage() {
       
       <h2 data-scroll-section
         data-scroll-speed="2"
+        id='leicanAra_info'
+        ref={boxRef}
       
-        className=" opacity-80 pt-3 text-xl max-w-3xl  mr-5 textC text-wrap absolute  sm:text-6xl font-Lora font-light"
+        className=" opacity-0 transition-opacity pt-3 text-xl max-w-3xl  mr-5 textC text-wrap absolute  sm:text-6xl font-Lora font-light"
       >
         LeicanAra is an innovative, independent branding studio, based in Halifax.
       </h2>
