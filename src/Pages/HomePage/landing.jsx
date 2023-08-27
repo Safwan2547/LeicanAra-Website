@@ -49,10 +49,10 @@ const introAnimate=[
  
 
   useEffect(() => {
-  timeline(introAnimate, {duration : 3},{
+  timeline(introAnimate, {duration : 3.5},{
     defaultOptions: { ease: "ease-in-out"}} )
 
-   timeline(landingAnimations, {duration : 3,delay:1},{
+   timeline(landingAnimations, {duration : 3,delay:1.5},{
     defaultOptions: {easing:spring() },
   })
    timeline(starFloat, {duration : 5,
