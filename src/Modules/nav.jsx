@@ -54,7 +54,7 @@ const Navbar = () => {
                 <TransitionLink 
                   to="/ContactPage" 
                   className='navItem opacity-0 hover:text-LunarTwilight transform transition-button duration-500 hover:scale-110 hidden lg:block buttonC font-Satoshi text-2xl font-medium cursor-none '>
-                  contact
+                  begin
                 </TransitionLink>
 
             </div>

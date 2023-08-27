@@ -22,8 +22,10 @@ function LandingPage() {
 
 //StarFloat
 const starFloat=[
-  [".braidedStar",{ y:0}, { duration: 0.5, easing: 'ease-out' }],
-  [".braidedStar",{ y:10}, { duration: 0.5, easing: 'ease-out' }],
+ 
+    [".braidedStar", { transform: 'translate3d(0, 0, 0)' }, { duration: 1, easing: 'ease-in-out' }],
+    [".braidedStar", { transform: 'translate3d(0, 20px, 0)' }, { duration: 1, easing: 'ease-in-out' }],
+    
   
 ];
 //This is the intro Animation
