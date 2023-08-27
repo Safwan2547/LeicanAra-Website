@@ -1,11 +1,14 @@
-import React from 'react';
+import React from "react";
+import { useEffect } from "react";
+import { animate,spring,timeline } from "motion";
 
-const Intro = () => {
+function intro(){
+    //Intro Animation
+ 
+ 
+
   return (
-    <div className="flex items-center justify-center h-screen">
-      <div className="text-4xl font-bold">Welcome to My App!</div>
-    </div>
-  );
-};
-
-export default Intro;
+  <div className="intro-Back absolute w-screen h-screen bg-black"></div>);
+  
+}
+export default intro;

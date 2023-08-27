@@ -13,7 +13,7 @@ import FAQPage from './Pages/FAQPage';
 function App() {
   return (
     <Router >
-    <div className=" sm:m-0  bg-MainBeige cursor-none">
+    <div className=" sm:m-0  bg-MainBeige ">
       {/* <Intro/> */}
       <Cursor />
       <Navbar />
