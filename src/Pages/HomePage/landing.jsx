@@ -85,7 +85,7 @@ const introAnimate=[
         <div data-factor="0.1" className='opacity-0 braidedStar scale-x-0 floater flex left-[70%] justify-center 
         align-middle absolute w-[300px] h-screen overflow-hidden'>
           <img className="relative    " src={logo} alt="Braided Star Logo" /></div>
-      <h1  className={` flex  w-1/2   sm:absolute sm:top-0   sm:hidden textC transition duration-200 text-left font-Satoshi text-5xl`}>
+      <h1  className={`landingItem flex opacity-0 w-1/2 text-NightFall z-1   sm:absolute sm:top-0   sm:hidden textC transition duration-200 text-left font-Satoshi text-5xl`}>
             Sculpting Aspirations.<br></br>Crafting Brands.
           </h1>
           

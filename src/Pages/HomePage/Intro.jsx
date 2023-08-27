@@ -10,8 +10,8 @@ function intro(){
  
 
   return (
-  <div className="flex justify-center align-middle intro-Back absolute w-screen h-screen bg-black">
-    <video autoPlay muted  width="1000">
+  <div className="z-100 flex justify-center align-middle intro-Back absolute w-screen h-screen bg-black">
+    <video autoPlay muted  width="1000 ">
         <source src={videoFile} type="video/mp4" />
       </video>
   </div>);
