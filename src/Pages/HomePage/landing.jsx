@@ -97,14 +97,18 @@ const introAnimate=[
 
 
           {/* This is the Desktop view */}
-          <h1 data-scroll id='hero_line'  className={`opacity-0 landingItem mouseParallax text-NightFall hidden sm:flex textC sm:absolute hover:text-LunarTwilight 
-            transition-text duration-200 text-left font-Satoshi text-7xl left-10 bottom-[25%]  font-bold`}>
+          <div className='opacity-0 landingItem mouseParallax text-NightFall hidden sm:flex  sm:absolute hover:text-LunarTwilight 
+            transition-text duration-200 text-left  left-10 bottom-[20%] w-2/3 flex-col '>
+          <h1 data-scroll id='hero_line'  className={` textC mb-5 font-bold font-Satoshi text-7xl`}>
             Sculpting Aspirations,<br></br>Crafting Brands.
           </h1>
-          <h1 className={`hidden opacity-80  font-Lora  sm:relative text-4xl mt-5 sm:block  text-center  `}>
+          <h1 className={`hidden opacity-80 textP landingItem text-black  font-Lora pl-2  text-3xl mr-44 sm:block  text-left  `}>
+          LeicanAra is an innovative, independent branding studio, based in Halifax.
+
            
 
           </h1>
+          </div>
         </div>
         </div>
         
