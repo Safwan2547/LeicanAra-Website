@@ -4,15 +4,15 @@ const ProjectCard = ({ project }) => {
     const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="relative p-4 "onMouseEnter={() => setIsHovered(true)}
+    <div className="relative p-4 " onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}
          >
-      <div className="hover:opacity-40 hover:scale-105 transition-all duration-[600ms] rounded  shadow-lg">
-        <div className={` overflow-clip`}>
+      <div className=" rounded  shadow-lg">
+        <div className={` hover:opacity-40 hover:scale-105 transition-all duration-[600ms] overflow-clip`}>
           {project.type === 'image' ? (
             <img src={project.thumbnail} alt={project.title} className="rounded-t" />
           ) : (
-            <video muted autoPlay loop  className={`transition-all duration-[600ms] ${isHovered? "scale-[150%]":"scale-100"}`}>
+            <video muted autoPlay loop  className={`transition-all duration-[600ms] ${isHovered? "opacity-50 scale-[120%]":"scale-[100%]"}`}>
               <source src={project.thumbnail} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
