@@ -7,7 +7,8 @@ import LocomotiveScroll from 'locomotive-scroll';
 import useIntersectionObserver from '../Modules/IntersectionObserver';
 import Footer from '../Modules/Footer';
 import mouseParallax from '../Modules/mouseParallax';
-import intro from './HomePage/Intro';
+import ProjectGrid from '../Pages/HomePage/ProjectGrid';
+import projects from './HomePage/Projects';
 import { float } from '../Modules/floater';
 function HomePage() {
   const containerRef = useRef(null);
@@ -47,7 +48,7 @@ function HomePage() {
           <LandingPage/>
           
           <AboutPage />
-          <ProjectsSection/>
+          <ProjectGrid projects={projects} />
           <Footer/>
         </div>
         </div>
