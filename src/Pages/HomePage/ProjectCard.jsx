@@ -1,10 +1,11 @@
+import TransitionLink from '../../Modules/TransitionLink';
 import React,{useState} from 'react';
 
 const ProjectCard = ({ project }) => {
     const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="relative p-4 " onMouseEnter={() => setIsHovered(true)}
+    <TransitionLink to="/FAQPage" className="relative p-4 " onMouseEnter={() => setIsHovered(true)}
     onMouseLeave={() => setIsHovered(false)}
          >
       <div className=" rounded  shadow-lg">
@@ -18,15 +19,15 @@ const ProjectCard = ({ project }) => {
             </video>
           )}
         </div>
-        <div className={`p-4 absolute inset-0 transition-opacity duration-[600ms] rounded  bg-opacity-50 flex flex-col justify-center items-center 
+        <div className={`p-4 absolute inset-0 transition-opacity duration-[600ms] rounded
+          bg-opacity-50 flex flex-col justify-center items-center 
                           ${isHovered ? 'opacity-100' : 'opacity-0'} `} 
                          >
-        
           <h4 className="font-bold text-xl text-black mb-2">{project.title}</h4>
           <p className="text-gray-700 text-base">{project.description}</p>
         </div>
       </div>
-    </div>
+    </TransitionLink>
   );
 };
 

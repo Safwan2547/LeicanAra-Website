@@ -78,15 +78,14 @@ function Cursor() {
       className= {`${hovering === 'button'
       ? '!opacity-80 !w-0 !h-0 !bg-LunarTwilight'
       : hovering === 'text'
+
       ? '!opacity-80 !w-1 !h-24 !border-NightFall !bg-NightFall cursor-none'
       : hovering === 'textP'
+
       ? '!opacity-80 !w-1 !h-10 !border-NightFall !bg-NightFall cursor-none'
-      // : hovering === 'footerC'
-      // ? '!opacity-80 !w-7 !h-7 !border-MainBeige !bg-MainBeige'
       : ''}
        transition-cursor hidden sm:block !duration-300  bg-LunarTwilight  fixed rounded-full z-50` }
       style={{
-     
         pointerEvents: "none"
       }}
     />
