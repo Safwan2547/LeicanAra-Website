@@ -40,7 +40,7 @@ function HomePage() {
   return (
 
     <div>
-      <Intro/>
+      
         <div
         ref={containerRef} 
         data-scroll-container className="pl-5 pr-5 sm:pl-10 sm:pr-10" >

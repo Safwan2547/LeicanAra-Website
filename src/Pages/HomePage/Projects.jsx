@@ -1,5 +1,5 @@
 import React, { useRef,useState, useEffect } from 'react';
-import starFallVideo from "../../Assets/LeicanAra Intro Desktop_1.mp4"
+import starFallVideo from "../../Assets/LeicanAra website Intro v2.mp4"
 import SvavaVideo from "../../Assets/WebsiteTest.mp4"
 const projects = [
     {

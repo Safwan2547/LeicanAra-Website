@@ -3,6 +3,7 @@ import logo from '../../Assets/Logo.svg'; // Adjust the path according to your d
 import LocomotiveScroll from 'locomotive-scroll';
 import landingVid from '../../Assets/Website landing 1.mp4'
 import { animate, scroll, inView,timeline,spring } from "motion"
+import { Parallax } from 'react-parallax';
 //FIX LOCOMOTIVE SCROLL
 
 function LandingPage() {
@@ -14,7 +15,7 @@ function LandingPage() {
   //  delay for the landing video
   setTimeout(() => {
     setShowLandingVideo(true);
-  }, 3500);
+  }, 0);
 
 //This is the animation for the landing page
   const landingAnimations=[
@@ -27,11 +28,6 @@ function LandingPage() {
     [".braidedStar",{ opacity: 1}, { duration: 0.3,easing:"ease-out"}],
   ];
 
-//StarFloat
-// const starFloat=[
- 
-//     [".braidedStar", { transform: 'translate3d(0, 0, 0)' }, { duration: 1, easing: 'ease-in-out' }],
-//     [".braidedStar", { transform: 'translate3d(0, 20px, 0)' }, { duration: 1, easing: 'ease-in-out' }],
     
   
 // ];
@@ -39,35 +35,25 @@ function LandingPage() {
 //The entire page is covered with a black bg
 //Must ensure the animation only triggers once when the user first logs in (May need cookies)
 
-const introAnimate=[
-  [".intro-Back",{ opacity: 0}, { duration: 0.5,delay:1,easeing:["ease-in", "ease-out"] }],
-  [".intro-Back",{ display:"none"}, { duration:0.001 }]
+// const introAnimate=[
+//   [".intro-Back",{ opacity: 0}, { duration: 0.3,delay:1.5,easeing:["ease-in", "ease-out"] }],
+//   [".intro-Back",{ display:"none"}, {  duration:0.01, delay:0.5  }]
 
 
   
-]
+ 
 
   function stagger(delay) {
   return (i) => i * delay;
 }
 
- 
-    
+   useEffect(() => {
+  // timeline(introAnimate, {duration : 0},{
+  //   defaultOptions: { ease: "ease-in"}} )
 
-  
- 
-
-  useEffect(() => {
-  timeline(introAnimate, {duration : 3.5},{
-    defaultOptions: { ease: "ease-in-out"}} )
-
-   timeline(landingAnimations, {duration : 3,delay:1.5},{
-    defaultOptions: {easing:spring() },
+   timeline(landingAnimations, {duration : 3,delay:0},{
+    defaultOptions: {easing:"ease-in-out" },
   })
-  //  timeline(starFloat, {duration : 5,
-  //   direction: "alternate",repeat:Infinity},{
-  //   defaultOptions: { ease: "ease-in-out" },
-  // })
   
    
     return () => {
@@ -89,10 +75,10 @@ const introAnimate=[
        sm:flex-wrap justify-center  sm:items-center   sm:justify-items-start
        h-screen prose prose-sm lg:prose-xl text-MainBeige relative`}>
 
-<div className="z-1 w-screen h-screen absolute outline-none border-none">
+<div className="z-1   w-screen h-screen absolute outline-none ">
           {/* Conditionally render the landing video based on showLandingVideo state */}
           {showLandingVideo && (
-            <video className="w-full h-full absolute scale-90 border-none overflow-hidden object-cover hover:none" controls={false} autoPlay muted loop>
+            <video className="w-full  h-full absolute scale-[60%] border-none overflow-hidden object-cover hover:none" controls={false} autoPlay muted loop>
               <source src={landingVid} type="video/mp4" />
               {/* You can add more source elements for different video formats (WebM, Ogg) */}
             </video>
@@ -104,7 +90,7 @@ const introAnimate=[
         {/* <div data-factor="0.1" className='hidden sm:flex opacity-0 braidedStar scale-x-0 floater  left-[70%] justify-center 
         align-middle absolute w-[300px] h-screen overflow-hidden'>
           <img className="relative    " src={logo} alt="Braided Star Logo" /></div> */}
-      <h1  className={`landingItem flex opacity-0 w-1/2 text-NightFall z-2   sm:absolute sm:top-0   sm:hidden textC transition duration-200 text-left font-Satoshi text-5xl`}>
+      <h1  className={`landingItem flex opacity-0 w-1/2 z-10 text-NightFall z-3   sm:absolute sm:top-0   sm:hidden textC transition duration-200 text-left font-Satoshi text-5xl`}>
             StoryTellers for the Visionaries
           </h1>
           
@@ -114,13 +100,14 @@ const introAnimate=[
 
 
           {/* This is the Desktop view */}
-          <div className='opacity-0 landingItem mouseParallax text-NightFall hidden sm:flex  sm:absolute hover:text-LunarTwilight 
-            transition-text duration-200 text-left  left-10 bottom-[20%] w-2/3 flex-col '>
-          <h1 data-scroll id='hero_line'  className={` textC mb-5 font-bold font-Satoshi text-7xl`}>
-          StoryTellers for the Visionaries
+
+          <div strength={100} className='opacity-0  landingItem mouseParallax text-NightFall hidden sm:flex  sm:absolute hover:text-LunarTwilight 
+            transition-text duration-200 text-left  left-10 bottom-[10%] w-2/3 flex-col '>
+          <h1 data-scroll id='hero_line'  className={` textC mb-5 font-bold font-Satoshi text-9xl`}>
+          Storytellers for the Visionaries
           </h1>
-          <h1 className={`hidden opacity-80 textP landingItem text-black font-light font-Satoshi pl-2  text-3xl mr-44 sm:block  text-left  `}>
-          LeicanAra is an innovative, independent branding studio, based in Halifax.
+          <h1   className={`hidden opacity-80 textP landingItem text-black font-light font-Satoshi pl-2  text-3xl ml-5 mr-44 sm:block  text-left  `}>
+          We eliminate invisibility by creating distinct brand identities that resonate.
 
            
 
