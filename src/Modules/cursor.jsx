@@ -66,7 +66,7 @@ function Cursor() {
       top: `${y - cursorSize / 2}px`
     }, {
      // Adjust the duration to control the "drag" effect
-    easing: spring({mass:1,stiffness:700, damping: 200,
+    easing: spring({mass:4,stiffness:700, damping: 200,
       }) // Custom easing to give a feeling of inertia
   });
 

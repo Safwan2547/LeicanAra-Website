@@ -87,10 +87,8 @@ function LandingPage() {
 
       
 
-        {/* <div data-factor="0.1" className='hidden sm:flex opacity-0 braidedStar scale-x-0 floater  left-[70%] justify-center 
-        align-middle absolute w-[300px] h-screen overflow-hidden'>
-          <img className="relative    " src={logo} alt="Braided Star Logo" /></div> */}
-      <h1  className={`landingItem flex opacity-0 w-1/2 z-10 text-NightFall z-3   sm:absolute sm:top-0   sm:hidden textC transition duration-200 text-left font-Satoshi text-5xl`}>
+          {/* This is the Mobile view */}            
+      <h1  className={`landingItem flex opacity-0 w-1/3 z-10 text-NightFall z-3   sm:absolute sm:top-0   sm:hidden textC transition duration-200 text-left font-Satoshi text-5xl`}>
             StoryTellers for the Visionaries
           </h1>
           
