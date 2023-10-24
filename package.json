@@ -9,7 +9,7 @@
     "gsap": "^3.11.5",
     "http-server": "^14.1.1",
     "locomotive-scroll": "^4.1.4",
-    "motion": "^10.16.2",
+    "motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-parallax": "^3.5.1",
