@@ -3,16 +3,16 @@ import Intro from './HomePage/Intro';
 import LandingPage from './HomePage/landing';
 import AboutPage from './HomePage/About';
 import ProjectsSection from './HomePage/Projects';
-import IntroParent from './HomePage/IntroParent';
 import LocomotiveScroll from 'locomotive-scroll';
 import useIntersectionObserver from '../Modules/IntersectionObserver';
 import Footer from '../Modules/Footer';
-
+import mouseParallax from '../Modules/mouseParallax';
+import ProjectGrid from '../Pages/HomePage/ProjectGrid';
+import projects from './HomePage/Projects';
+import { float } from '../Modules/floater';
 function HomePage() {
   const containerRef = useRef(null);
   let scroll;
-  <useIntersectionObserver/>
-
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {
@@ -35,20 +35,22 @@ function HomePage() {
   useEffect(() => {
     if(scroll) scroll.update();
   }, [/* dependencies that change when your page content changes */]);
-
-  
+  float();
 
   return (
 
-    
+    <div>
+      
         <div
         ref={containerRef} 
-        data-scroll-container className="pl-5 pr-5 sm:pl-10 sm:pr-10" >
+        data-scroll-container className=" " >
+          
           <LandingPage/>
           
           <AboutPage />
-          <ProjectsSection/>
+          <ProjectGrid projects={projects} />
           <Footer/>
+        </div>
         </div>
     
   
