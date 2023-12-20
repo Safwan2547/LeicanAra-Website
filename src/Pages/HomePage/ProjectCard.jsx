@@ -21,7 +21,7 @@ const ProjectCard = ({ project }) => {
   return (
     
 
-    <div className='relative grid grid-cols-7'>
+    <div className='relative grid grid-cols-1'>
     
          
           
@@ -29,14 +29,14 @@ const ProjectCard = ({ project }) => {
          onMouseMove={handleMouseMove}
           onMouseLeave={handleMouseLeave} 
         > {/* Use the Link component with the project's link */}
-      <div className=" rounded hover:opacity-80 hover:scale-[102%] transition-all duration-300 shadow-lg" >
+      <div className=" rounded  transition-all duration-300 shadow-lg" >
         
-        <div className={`     hover:opacity-40 hover:scale-105 transition-all duration-[600ms] overflow-clip`}>
+        <div className={`      transition-all duration-[600ms] overflow-clip`}>
         
           {project.type === 'image' ? (
             <img src={project.thumbnail} alt={project.title} className="rounded-t" />
           ) : (
-            <video muted autoPlay loop  className={`transition-all duration-[600ms] ${isHovered? "opacity-50 scale-[120%]":"scale-[100%]"}`}>
+            <video muted autoPlay loop  className={`transition-all duration-[600ms] ${isHovered? "opacity-100 scale-[120%]":"scale-[100%]"}`}>
               <source src={project.thumbnail} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
@@ -44,15 +44,15 @@ const ProjectCard = ({ project }) => {
         </div>
         <div className={`  buttonC cursor-none p-4 absolute inset-0 transition-opacity duration-[600ms] rounded
           bg-opacity-50 flex flex-col justify-center items-center 
-                          ${isHovered ? 'opacity-100' : 'opacity-0'} `} 
+                          ${isHovered ? 'opacity-100' : 'opacity-100'} `} 
                          >
          
         </div>
       </div>
       </TransitionLink>
-      <div className="ml-10  col-span-3">
-        <h4 className="textC font-bold text-6xl text-black mb-2">{project.title}</h4>
-        <p className="text-gray-700 textP text-3xl">{project.description}</p>
+      <div className=" ml-10 mt-10 col-span-4 absolute">
+        <h4 className= {`textC  text-3xl opacity-90 ${project.textColor} ml-1 mb-2`}>{project.title}</h4>
+        <p className={`textP ${project.textColor} font-bold text-8xl`}>{project.description}</p>
       </div>
 
     </div>

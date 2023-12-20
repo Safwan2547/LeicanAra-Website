@@ -1,23 +1,29 @@
 import React, { useRef,useState, useEffect } from 'react';
-import starFallVideo from "../../Assets/LeicanAra website Intro v2.mp4"
+import starFallVideo from "../../Assets/StarFall_Card_v1.mp4"
+import starFallPhoto from "../../Assets/Container-Mockup.jpg"
+import LeicanAraPhoto from "../../Assets/Magazine.png"
+
 import SvavaVideo from "../../Assets/WebsiteTest.mp4"
 const projects = [
     {
+      
       title: 'StarFall',
-      description: 'Branding a revolutionary space mining company',
-      type: 'video',
-      thumbnail: starFallVideo,
+      description: 'Humanity\'s future, Revolutionized.',
+      type: 'image',
+      thumbnail: starFallPhoto,
       projectLink: 'https://www.starfallstudios.com/',
+      textColor:"text-MainBeige"
     },
     {
-      title: 'Svava',
-      description: 'Branding the next renassaince of skincare.',
-      type: 'video',
-      thumbnail: SvavaVideo,
+      title: 'LeicanAra',
+      description: 'Visionary',
+      type: 'image',
+      thumbnail: LeicanAraPhoto,
       projectLink: 'https://www.leicanAra.com',
+      textColor:"text-[#21323e]"
     },
     {
-      title:'LeicanAra',
+      title:'sc',
       description:'This is a third awesome project',
       type:'video',
       thumbnail:starFallVideo,

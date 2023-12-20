@@ -24,6 +24,7 @@ module.exports = {
       MainBeige: '#EFECE3',
       customTeal: '#003847',
       LunarTwilight:"#2f4858",
+      LunarDawn:"#21323e",
       NightFall:"#141414",
       customTealAlpha:"#00384780",
       customBurgandy: '#470F00',
