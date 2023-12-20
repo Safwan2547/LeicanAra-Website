@@ -4,16 +4,25 @@ import SvavaVideo from "../../Assets/WebsiteTest.mp4"
 const projects = [
     {
       title: 'StarFall',
-      description: 'This is an awesome project.',
+      description: 'Branding a revolutionary space mining company',
       type: 'video',
-      thumbnail: starFallVideo
+      thumbnail: starFallVideo,
+      projectLink: 'https://www.starfallstudios.com/',
     },
     {
       title: 'Svava',
-      description: 'This is another awesome project.',
+      description: 'Branding the next renassaince of skincare.',
       type: 'video',
       thumbnail: SvavaVideo,
+      projectLink: 'https://www.leicanAra.com',
     },
+    {
+      title:'LeicanAra',
+      description:'This is a third awesome project',
+      type:'video',
+      thumbnail:starFallVideo,
+      projectLink: 'https://www.starfallstudios.com/',
+    }
     // Add more projects here
   ];
   

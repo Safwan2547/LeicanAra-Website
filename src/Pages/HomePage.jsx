@@ -14,23 +14,7 @@ function HomePage() {
   const containerRef = useRef(null);
   let scroll;
 
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     scroll = new LocomotiveScroll({
-  //       el: containerRef.current,
-  //       smooth: true,
-  //      lerp:0.1,
-  //      multiplier:0.7,
-  //      gestureDirection:"vertical"
-  //     });
-
-  //   }, 1000);
-
-  //   return () => {
-  //     clearTimeout(timer);
-  //     if(scroll) scroll.destroy();
-  //   };
-  // }, []);
+  
 
   useEffect(() => {
     if(scroll) scroll.update();
