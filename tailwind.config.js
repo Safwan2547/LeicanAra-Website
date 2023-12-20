@@ -30,6 +30,19 @@ module.exports = {
 
 
     },
+
+    classes:{
+      hidden:{
+        display:"none",
+        transitionProperty:"all 1s ease-in-out",
+      },
+      
+      show:{
+        display:"block",
+      }
+
+    },
+
     transitionProperty: {
       'opacity': 'opacity',
       'size':'height,width',
@@ -44,6 +57,12 @@ module.exports = {
       'quart':"cubic-bezier(.62,.55,.68,1.12)"
     },
     
+
+    aspectRatio: {
+      'cinematic': '21/9', // Define a custom cinematic aspect ratio
+    },
+    
+    
     cursor:['hover'],
     minHeight: {
       '1/4': '25%',
@@ -56,7 +75,7 @@ module.exports = {
       'Satoshi': ['Satoshi', 'sans-serif'],
       'Lora': ['Lora,serif'],
       'Erode':['Erode,serif'],
-    
+
     },
     
     
@@ -65,6 +84,7 @@ module.exports = {
   plugins: [
     require('@tailwindcss/typography'),
     require('tailwindcss-animated')
+    
   ],
     corePlugins: {
     // ...

@@ -1,32 +1,26 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 
-function Observer({ children,className }) {
-  const elementRef = useRef(null);
-
+function MyIntersectionObserver() {
   useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in'); // Apply CSS class for fading in
-            observer.unobserve(entry.target); // Stop observing once element is visible
-          }
-        });
-      },
-      { threshold: 0.5 } // Trigger at 50% visibility of element
-    );
+    const observerCallback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log("Intersection Spotted");
+        }
+      });
+    };
 
-    if (elementRef.current) {
-      observer.observe(elementRef.current);
-    }
+    const observer = new IntersectionObserver(observerCallback);
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
 
     return () => {
-      if (elementRef.current) {
-        observer.unobserve(elementRef.current);
-      }
+      hiddenElements.forEach((el) => observer.unobserve(el));
     };
   }, []);
 
-  return <div ref={elementRef} className={className}>{children}</div>}
+  return null;
+}
 
-  export default Observer;
+export default MyIntersectionObserver;

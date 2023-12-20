@@ -1,11 +1,13 @@
 import React, { useRef, useState, useEffect } from 'react';
 import LocomotiveScroll from 'locomotive-scroll';
-import Observer from '../../Modules/IntersectionObserver';
+import {InView} from 'react-intersection-observer';
 import { animate,spring, scroll, inView,glide } from "motion"
 
 
 function AboutPage() {
   const boxRef = useRef(null);
+  
+
 
   useEffect(() => {
     // Ensure the ref is set
@@ -61,8 +63,14 @@ function AboutPage() {
       </div>
       
 
-      <div className='  w-screen h-screen relative '>
-        <h1 className='font-Satoshi text-3xl sm:text-8xl'> Our Bond,<br></br> Stronger than any string</h1>
+      <div
+      data-scroll-section
+      data-scroll-speed="2"
+      id='leicanAra_info2'
+      ref={boxRef}
+
+      className='  w-screen h-screen relative '>
+        <h1 className='hidden font-Satoshi text-3xl sm:text-8xl'> Our Bond,<br></br> Stronger than any string</h1>
       <h2 
       
         className="opacity-80  pt-3 sm:pt-10 text-xl w-11/12  pr-5  textC text-wrap sm:max-h-20 sm:text-6xl font-Lora font-light sm:max-w-11/12 pt-"
