@@ -62,6 +62,10 @@ module.exports = {
     aspectRatio: {
       'cinematic': '21/9', // Define a custom cinematic aspect ratio
     },
+
+    animation:{
+      'pulse-slow': 'pulse 2s ease-in-out infinite',
+    },
     
     
     cursor:['hover'],

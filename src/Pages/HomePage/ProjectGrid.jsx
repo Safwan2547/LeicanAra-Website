@@ -17,7 +17,7 @@ const ProjectGrid = ({ projects }) => {
         
         {/* Map through the projects and render ProjectCard for each */}
         {projects.map((project) => (
-          <div className=' col-span-4    mt-10  ' key={project.id}>
+          <div className=' col-span-4 cursor-none   mt-10  ' key={project.id}>
             <ProjectCard project={project} />
           </div>
         ))}

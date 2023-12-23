@@ -39,7 +39,7 @@ const ProjectCard = ({ project }) => {
             {/* Render image or video based on the project type */}
             {project.type === 'image' ? (
               <img  src={project.thumbnail} alt={project.title} className="
-               rounded-t object-cover overflow-hidden aspect-[1.8/1] " />
+               rounded-t object-cover overflow-hidden aspect-[1.85/1] cursor-none " />
             ) : (
               <video
                 muted
@@ -55,7 +55,7 @@ const ProjectCard = ({ project }) => {
             )}
           </div>
           <div
-            className={`enterC p-4 absolute inset-0 transition-opacity duration-[600ms] rounded
+            className={`enterC p-4 absolute cursor-none inset-0 transition-opacity duration-[600ms] rounded
                         bg-opacity-50 flex flex-col justify-center items-center
                         ${isHovered ? 'opacity-100' : 'opacity-100'}`}
           ></div>
