@@ -39,6 +39,14 @@ function Cursor() {
         setHovering('footerC');
         console.log("footerC");
       }
+      else if(e.target.className.includes('footerC')){
+        setHovering('footerC');
+        console.log("footerC");
+      }
+      else if (e.target.className.includes("enterC")){
+        setHovering('enterC');
+        console.log("enterC");
+      }
       else{
         setHovering(null)
       }
@@ -71,24 +79,44 @@ function Cursor() {
   });
 
   };
-
+// Conditionally render arrow element for 'enterC'
+const renderArrow = () => {
+  if (hovering === 'enterC') {
+    return (
+      <div className='flex transition-opacity duration-500 justify-center w-full h-full items-center '>
+        <div className="scale-[200%] rotate-90 ">
+          <span className='text-LunarTwilight'>&#8593;</span>
+        </div>
+      </div>
+    );
+  }
+  return null;
+};
 
   return (
+    
+       
     <div id="Cursor" 
-      className= {`${hovering === 'button'
-      ? '!opacity-80 !w-0 !h-0 !bg-LunarTwilight'
-      : hovering === 'text'
+      className= {`${hovering === 'button'? 
+      '!opacity-80 !w-0 !h-0 !bg-LunarTwilight'
 
-      ? '!opacity-80 !w-1 !h-24 !border-NightFall !bg-NightFall cursor-none'
-      : hovering === 'textP'
+      : hovering === 'text' ? 
+      '!opacity-80 !w-1 !h-24 !border-NightFall !bg-NightFall cursor-none'
 
-      ? '!opacity-80 !w-1 !h-10 !border-NightFall !bg-NightFall cursor-none'
-      : ''}
+      : hovering === 'textP'? 
+      '!opacity-80 !w-1 !h-10 !border-NightFall !bg-NightFall cursor-none'
+      
+      : hovering === 'enterC' ? 
+      '!opacity-100 transition-all !bg-MainBeige !w-24 !h-24 !border-NightFall border-8 border-solid cursor-none'
+      
+      
+      :''}
        transition-cursor hidden sm:block !duration-300  bg-LunarTwilight  fixed rounded-full z-50` }
       style={{
         pointerEvents: "none"
       }}
-    />
+    >{renderArrow()}</div>
+    
   );
 }
 

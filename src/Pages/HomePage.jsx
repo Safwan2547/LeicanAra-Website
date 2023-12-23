@@ -10,6 +10,7 @@ import mouseParallax from '../Modules/mouseParallax';
 import ProjectGrid from '../Pages/HomePage/ProjectGrid';
 import projects from './HomePage/Projects';
 import { float } from '../Modules/floater';
+import CallToAction from './HomePage/CallToAction';
 function HomePage() {
   const containerRef = useRef(null);
   let scroll;
@@ -33,6 +34,7 @@ function HomePage() {
           
           <AboutPage />
           <ProjectGrid projects={projects} />
+          <CallToAction></CallToAction>
           <Footer/>
         </div>
         </div>
