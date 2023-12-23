@@ -107,7 +107,7 @@ const renderArrow = () => {
       '!opacity-80 !w-1 !h-10 !border-NightFall !bg-NightFall cursor-none'
       
       : hovering === 'enterC' ? 
-      '!opacity-100 transition-all !border-opacity-95  !bg-MainBeige ease-in-out  !w-20 !h-20 !border-NightFall drop-shadow-2xl border-solid cursor-none'
+      '!opacity-100 transition-all !border-opacity-95  backdrop-blur-md backdrop-brightness-150  !bg-MainBeige ease-in-out  !w-20 !h-20 !border-NightFall drop-shadow-2xl border-solid cursor-none'
       
       
       :''}
