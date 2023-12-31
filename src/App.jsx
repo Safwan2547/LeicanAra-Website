@@ -9,6 +9,7 @@ import ContactPage from './Pages/ContactPage';
 import StarfallPage from './Pages/StarFallPage';
 import HomePage from './Pages/HomePage';
 import FAQPage from './Pages/FAQPage';
+import ProjectPage from './Pages/Projects/ProjectPage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route exact path="/ContactPage" element={<ContactPage />} />
         <Route exact path="/FAQPage" element={<FAQPage />} />
         <Route exact path="/StarFallPage" element={<StarfallPage />} />
+        <Route exact path="/:projectKey" element={<ProjectPage />} />
 
 
 

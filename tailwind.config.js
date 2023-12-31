@@ -91,8 +91,5 @@ module.exports = {
     require('tailwindcss-animated')
     
   ],
-    corePlugins: {
-    // ...
-    fontSmoothing: true, // add this
-  },
+    
 }}

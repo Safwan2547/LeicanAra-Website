@@ -52,14 +52,15 @@ const Navbar = () => {
 
             
                 </Link>
-                {<TransitionLink to="/FAQPage"  className=' ease-in-out navItem hover:animate-pulse-slow opacity-0 hover:text-LunarTwilight transform transition-button duration-500 hover:scale-110 hidden lg:block buttonC font-Satoshi text-2xl font-medium cursor-none '>faq</TransitionLink> }
-
+               
                 <TransitionLink 
                   to="/ContactPage" 
                   className='navItem hover:animate-pulse-slow opacity-0 hover:text-LunarTwilight 
                   transform ease-in-out transition-button duration-500 hover:scale-110 hidden lg:block buttonC font-Satoshi text-2xl font-medium cursor-none '>
-                  begin
+                  about
                 </TransitionLink>
+                 {<TransitionLink to="/FAQPage"  className=' ease-in-out navItem hover:animate-pulse-slow opacity-0 hover:text-LunarTwilight transform transition-button duration-500 hover:scale-110 hidden lg:block buttonC font-Satoshi text-2xl font-medium cursor-none '>faq</TransitionLink> }
+
 
             </div>
            

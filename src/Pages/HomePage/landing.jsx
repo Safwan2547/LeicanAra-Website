@@ -107,7 +107,7 @@ function LandingPage() {
           Storytellers for the Visionaries
           </h1>
 
-          <h1   className={`hidden opacity-80 textP landingItem text-black font-light font-Lora pl-2 
+          <h1   className={`hidden opacity-80 textP landingItem text-black font-light font-Satoshi pl-2 
            text-3xl ml-2 mr-44 sm:block  text-left  `}>
           We eliminate invisibility by creating distinct brand identities that resonate.
 

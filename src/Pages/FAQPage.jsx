@@ -14,7 +14,7 @@ function FAQPage() {
          };
        }, []);
 return(
-    <div className=" bg-MainBeige cursor-none">
+    <div className=" cursor-none">
       
 
     <div className={`pl-5 pr-5 w-full transition-opacity ease-elastic duration-1000 ${isMounted1 ? 'opacity-100' : 'opacity-0'} flex justify-center align-middle items-start flex-col sm:p-[10%]  mt-[35%] sm:mt-[0] prose sm:prose-xl mb-[10%]`}>

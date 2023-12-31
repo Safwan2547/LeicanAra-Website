@@ -6,18 +6,15 @@ import ProjectCard from './ProjectCard';
 const ProjectGrid = ({ projects }) => {
   return (
     // Outer container with flex layout and centering
-    <div className="w-[100%] flex justify-center items-start flex-wrap">
+    <div className="w-[100%] flex justify-center overflow-scroll items-start  flex-wrap">
       <h1 className='text-NightFall text-8xl'>Projects</h1>
       {/* Grid container for projects with specified columns, gap, and border */}
-      <div className="sm:grid-cols-4 gap-36 w-[95vw]  ">
+      <div className="sm:flex flex-col gap-8 w-[95vw]  snap-mandatory snap-both overflow-scroll  ">
        
-       
-          
-        
         
         {/* Map through the projects and render ProjectCard for each */}
-        {projects.map((project) => (
-          <div className=' col-span-4 cursor-none   mt-10  ' key={project.id}>
+        {projects.map((project, index) => (
+          <div className='  cursor-none snap-start  mt-20  border-black ' key={project.key}>
             <ProjectCard project={project} />
           </div>
         ))}

@@ -3,19 +3,22 @@ import starFallVideo from "../../Assets/StarFall_Card_v1.mp4"
 import starFallPhoto from "../../Assets/Container-Mockup.jpg"
 import LeicanAraPhoto from "../../Assets/Magazine.png"
 import SvavaPhoto from "../../Assets/Zen.jpg"
-
 import SvavaVideo from "../../Assets/WebsiteTest.mp4"
+
 const projects = [
     {
-      
+      key:"starfall",
       title: 'StarFall',
-      description: 'Humanity\'s future, Revolutionized.',
+      mainHeader: 'Humanity\'s future, Revolutionized.',
       type: 'image',
       thumbnail: starFallPhoto,
-      projectLink: 'https://www.starfallstudios.com/',
-      textColor:"text-MainBeige"
+      projectLink: '/ProjectPage',
+      textColor:"text-MainBeige",
+      services:"",
+
     },
     {
+      key:"leicanara",
       title: 'LeicanAra',
       description: 'Stories that Bind us.',
       type: 'image',
@@ -24,6 +27,7 @@ const projects = [
       textColor:"text-[#21323e]"
     },
     {
+      key:"svava",
       title:'Sväva',
       description:'Skincare forever changed',
       type:'image',

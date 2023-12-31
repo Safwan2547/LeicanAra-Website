@@ -26,19 +26,19 @@ const ProjectCard = ({ project }) => {
 
   // Render the project card
   return (
-    <div className='relative enterC  flex'>
+    <div className='watcher relative enterC  flex' >
       {/* Use TransitionLink component with the project's link */}
       <TransitionLink
-        to={project.projectLink}
+        to={`/${project.key}`} 
         className="enterC"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
         <div className="enterC object-cover  rounded transition-all duration-300">
           <div className={`relative enterC transition-all duration-[600ms] overflow-hidden`}>
-            {/* Render image or video based on the project type */}
+            {/* Render image or video  based on the project type */}
             {project.type === 'image' ? (
-              <img  src={project.thumbnail} alt={project.title} className="
+              <img loading='lazy'  src={project.thumbnail} alt={project.title} className="
                rounded-t object-cover overflow-hidden aspect-[1.85/1] cursor-none " />
             ) : (
               <video
@@ -63,10 +63,10 @@ const ProjectCard = ({ project }) => {
       </TransitionLink>
       {/* Additional project information */}
       <div className="cursor-none enterC ml-10 mt-10 col-span-4 absolute">
-        <h4 className={`enterC text-3xl opacity-90 ${project.textColor} ml-1 mb-2`}>
+        <h4 className={`enterC  text- text-3xl opacity-90 ${project.textColor} ml-1 mb-2`}>
           {project.title}
         </h4>
-        <p className={`enterC ${project.textColor} font-bold text-9xl `}>{project.description}</p>
+        <p className={`enterC ${project.textColor}  font-Satoshi  font-[800] text-9xl `}>{project.description}</p>
       </div>
     </div>
   );

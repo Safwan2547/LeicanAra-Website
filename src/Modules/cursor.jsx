@@ -83,9 +83,9 @@ function Cursor() {
 const renderArrow = () => {
   if (hovering === 'enterC') {
     return (
-      <div className=' animate-pulse-slow flex transition-opacity duration-500 justify-center w-full h-full items-center '>
+      <div className='  animate-pulse-slow flex transition-opacity duration-500 justify-center w-full h-full items-center '>
         <div className=" scale-[200%] rotate-90 ">
-          <span className='text-LunarTwilight'>&#8593;</span>
+          <span className=' text-LunarTwilight'>&#8593;</span>
         </div>
       </div>
     );
@@ -107,7 +107,7 @@ const renderArrow = () => {
       '!opacity-80 !w-1 !h-10 !border-NightFall !bg-NightFall cursor-none'
       
       : hovering === 'enterC' ? 
-      '!opacity-100 transition-all !border-opacity-95  backdrop-blur-md backdrop-brightness-150  !bg-MainBeige ease-in-out  !w-20 !h-20 !border-NightFall drop-shadow-2xl border-solid cursor-none'
+      '!opacity-100 transition-all !border-opacity-95  drop-shadow-lg  !bg-MainBeige ease-in-out  !w-20 !h-20 !border-NightFall border-solid cursor-none'
       
       
       :''}

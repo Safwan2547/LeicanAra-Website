@@ -4,7 +4,7 @@ import {InView} from 'react-intersection-observer';
 import { animate,spring, scroll, inView,glide } from "motion"
 
 
-function AboutPage() {
+function AboutSection() {
   const boxRef = useRef(null);
   
 
@@ -90,4 +90,4 @@ function AboutPage() {
   );
 }
 
-export default AboutPage;
+export default AboutSection;

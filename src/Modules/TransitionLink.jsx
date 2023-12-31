@@ -25,13 +25,15 @@ const TransitionLink = ({to, children, className}) => {
           setIsTransitioning(true);
 
           setTimeout(() => setOpacity('opacity-100'), 10);
+          setTimeout(() => setIsTransitioning(false), 5000);
       }}
         
         className={className}>
         {children}
       </Link>
+
       {isTransitioning && 
-        <div className={`fixed top-0 left-0 w-screen h-screen bg-MainBeige transition-opacity duration-300 ${opacity}`}></div>
+        <div className={` fixed top-0 left-0 w-screen h-screen  transition-opacity duration-300 ${opacity}`}></div>
       }
     </>
   );
