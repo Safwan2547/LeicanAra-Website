@@ -20,12 +20,14 @@ function LandingPage() {
 //This is the animation for the landing page
   const landingAnimations=[
     [".navItem", { opacity: 0 }], 
-    [".landingItem", { opacity: 0}],
+    [".landingItem1", { opacity: 0}],
+    [".landingItem2", { opacity: 0}],
     [".braidedStar", { opacity: 0}],  // Initial state: set opacity to 0
-    [".navItem", { opacity: 1 }, { duration: 0.4, delay: stagger(0.1) }],
+    [".landingItem1",{ opacity: 1}, { duration: 0.2, easing:"ease-in-out"}],
+    [".landingItem2",{ opacity: 0.8}, { duration: 0.2, easing:"ease-in-out"}],
+    [".navItem", { opacity: 1 }, { duration: 0.3, delay: stagger(0.2) }],
     
-    [".landingItem",{ opacity: 1}, { duration: 0.3}],
-    [".braidedStar",{ opacity: 1}, { duration: 0.3,easing:"ease-out"}],
+    [".braidedStar",{ opacity: 1}, { duration: 0.2,easing:"ease-out"}],
   ];
 
     
@@ -100,14 +102,14 @@ function LandingPage() {
 
           {/* This is the Desktop view */}
 
-          <div strength={100} className='opacity-0  landingItem mouseParallax text-NightFall hidden sm:flex  sm:absolute hover:text-LunarTwilight 
+          <div strength={100} className='opacity-100  landingItem mouseParallax text-NightFall hidden sm:flex  sm:absolute hover:text-LunarTwilight 
             transition-text duration-200 text-left   left-10 bottom-[10%] w-2/3 flex-col '>
 
-          <h1 data-scroll id='hero_line'  className={` textC mb-5 font-medium font-Satoshi text-9xl`}>
+          <h1 data-scroll id='hero_line'  className={` textC mb-5 opacity-0 landingItem1 font-medium font-Satoshi text-9xl`}>
           Storytellers for the Visionaries
           </h1>
 
-          <h1   className={`hidden opacity-80 textP landingItem text-black font-light font-Satoshi pl-2 
+          <h1   className={`hidden opacity-0 textP landingItem2 text-black font-light font-Satoshi pl-2 
            text-3xl ml-2 mr-44 sm:block  text-left  `}>
           We eliminate invisibility by creating distinct brand identities that resonate.
 

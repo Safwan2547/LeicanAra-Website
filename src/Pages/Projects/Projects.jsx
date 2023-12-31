@@ -12,6 +12,7 @@ const projects = [
       mainHeader: 'Humanity\'s future, Revolutionized.',
       type: 'image',
       thumbnail: starFallPhoto,
+      thumbnailAlt:"image description",
       projectLink: '/ProjectPage',
       textColor:"text-MainBeige",
       services:"",

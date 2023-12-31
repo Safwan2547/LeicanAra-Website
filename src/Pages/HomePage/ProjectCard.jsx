@@ -38,10 +38,10 @@ const ProjectCard = ({ project }) => {
           <div className={`relative enterC transition-all duration-[600ms] overflow-hidden`}>
             {/* Render image or video  based on the project type */}
             {project.type === 'image' ? (
-              <img loading='lazy'  src={project.thumbnail} alt={project.title} className="
+              <img loading='lazy' alt={project.alt}  src={project.thumbnail} className="
                rounded-t object-cover overflow-hidden aspect-[1.85/1] cursor-none " />
             ) : (
-              <video
+              <video alt={project.alt} loading="lazy"
                 muted
                 autoPlay
                 loop
