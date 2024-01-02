@@ -9,12 +9,12 @@ import ContactPage from './Pages/ContactPage';
 import StarfallPage from './Pages/StarFallPage';
 import HomePage from './Pages/HomePage';
 import FAQPage from './Pages/FAQPage';
-import ProjectPage from './Pages/Projects/ProjectPage';
+import ProjectPage from './Pages/ProjectPage';
 
 function App() {
   return (
     <Router >
-    <div className=" sm:m-0 bg-white  ">
+    <div className=" sm:m-0 appearance-none  ">
       {/* <Intro/> */}
       <Cursor />
       <Navbar />

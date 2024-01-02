@@ -1,7 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+html {
+  font-size: 16px; /* Set your desired root font size */
+  background-color: #ffffff;
+}
+
 
 #Cursor{
   cursor: none;
@@ -13,6 +20,7 @@
 .textC{
 
 }
+
 .faq-h3 {
   @apply textC transition duration-200 sm:hover:text-LunarTwilight text-NightFall text-left font-Satoshi opacity-90 sm:text-4xl text-3xl font-bold
 }
@@ -37,4 +45,5 @@
 .fade-in {
   animation: fadeIn 1s ease forwards;
 }
+
 

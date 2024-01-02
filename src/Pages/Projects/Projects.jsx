@@ -21,7 +21,7 @@ const projects = [
     {
       key:"leicanara",
       title: 'LeicanAra',
-      description: 'Stories that Bind us.',
+      mainHeader: 'Stories that Bind us.',
       type: 'image',
       thumbnail: LeicanAraPhoto,
       projectLink: 'https://www.leicanAra.com',
@@ -30,7 +30,7 @@ const projects = [
     {
       key:"svava",
       title:'Sväva',
-      description:'Skincare forever changed',
+      mainHeader:'Skincare forever changed',
       type:'image',
       thumbnail:SvavaPhoto,
       projectLink: 'https://www.starfallstudios.com/',

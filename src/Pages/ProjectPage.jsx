@@ -3,7 +3,7 @@
 //Is dynamically generated based on the project
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import projects from './Projects';
+import projects from './Projects/Projects';
 
 const ProjectPage = () => {
   const { projectKey } = useParams();

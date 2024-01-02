@@ -3,7 +3,7 @@ import logo from '../../Assets/Logo.svg'; // Adjust the path according to your d
 import LocomotiveScroll from 'locomotive-scroll';
 import landingVid from '../../Assets/Website landing 1.mp4'
 import { animate, scroll, inView,timeline,spring } from "motion"
-import { Parallax } from 'react-parallax';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 //FIX LOCOMOTIVE SCROLL
 
 function LandingPage() {
@@ -19,10 +19,12 @@ function LandingPage() {
 
 //This is the animation for the landing page
   const landingAnimations=[
+    // Initial state: set opacity to 0
     [".navItem", { opacity: 0 }], 
     [".landingItem1", { opacity: 0}],
     [".landingItem2", { opacity: 0}],
-    [".braidedStar", { opacity: 0}],  // Initial state: set opacity to 0
+    [".braidedStar", { opacity: 0}],  
+    // Final state: set opacity to desired value
     [".landingItem1",{ opacity: 1}, { duration: 0.2, easing:"ease-in-out"}],
     [".landingItem2",{ opacity: 0.8}, { duration: 0.2, easing:"ease-in-out"}],
     [".navItem", { opacity: 1 }, { duration: 0.3, delay: stagger(0.2) }],
@@ -34,7 +36,6 @@ function LandingPage() {
   
 // ];
 //This is the intro Animation
-//The entire page is covered with a black bg
 //Must ensure the animation only triggers once when the user first logs in (May need cookies)
 
 // const introAnimate=[
@@ -70,7 +71,8 @@ function LandingPage() {
 
     return (
       //wrapper
-      <div data-scroll-section  className="">
+      <div   className=" ">
+      {/* <Parallax pages={3} ref={parallax} scrolling={true} horizontal={false} > */}
         
       <div  className={` transition-opacity overflow-hidden duration-1000 
        sm:ml-0 overflow-x-hidden flex flex-col 
@@ -101,23 +103,27 @@ function LandingPage() {
 
 
           {/* This is the Desktop view */}
-
-          <div strength={100} className='opacity-100  landingItem mouseParallax text-NightFall hidden sm:flex  sm:absolute hover:text-LunarTwilight 
+         
+          <div strength={100} className='opacity-100 landingItem mouseParallax text-NightFall hidden sm:flex  sm:absolute hover:text-LunarTwilight 
             transition-text duration-200 text-left   left-10 bottom-[10%] w-2/3 flex-col '>
 
-          <h1 data-scroll id='hero_line'  className={` textC mb-5 opacity-0 landingItem1 font-medium font-Satoshi text-9xl`}>
+          <h1 data-scroll id='hero_line'  className={` textC mb-5 opacity-0 landingItem1 font-medium font-Satoshi sm:text-[128px] leading-none`}>
           Storytellers for the Visionaries
           </h1>
+          
 
-          <h1   className={`hidden opacity-0 textP landingItem2 text-black font-light font-Satoshi pl-2 
-           text-3xl ml-2 mr-44 sm:block  text-left  `}>
-          We eliminate invisibility by creating distinct brand identities that resonate.
+          <h1   className={`hidden opacity-0 textP landingItem2  font-[300] font-Satoshi pl-2 
+           sm:text-3xl ml-2 mr-44 sm:block italic text-left  `}>
+          We eliminate invisibility by crafting distinct creative ideas that resonate
 
            
 
           </h1>
           </div>
+          
+         
         </div>
+        {/* </Parallax> */}
         </div>
         
     );

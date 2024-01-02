@@ -12,6 +12,7 @@ import projects from './Projects/Projects';
 import { float } from '../Modules/floater';
 import Watcher from '../Modules/Watcher';
 import CallToAction from './HomePage/CallToAction';
+import { Parallax } from '@react-spring/parallax';
 
 // Defining the functional component HomePage
 function HomePage() {
@@ -32,19 +33,23 @@ function HomePage() {
 
   // Rendering the HomePage component
   return (
-    <div>
+    <div className='bg-white'>
       {/* Container for Locomotive Scroll */}
-      <div ref={containerRef} data-scroll-container className=" ">
+      <div ref={containerRef} data-scroll-container className="bg-white ">
         {/* LandingPage component */}
+        
         <LandingPage />
+       
         {/* AboutPage component */}
         {/* <AboutSection /> */}
         {/* ProjectGrid component with projects passed as props */}
         <ProjectGrid projects={projects} />
         {/* CallToAction component */}
         <CallToAction />
+        
         {/* Footer component */}
         <Footer />
+        
       </div>
     </div>
   );

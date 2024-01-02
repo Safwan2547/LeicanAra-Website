@@ -66,7 +66,7 @@ const ProjectCard = ({ project }) => {
         <h4 className={`enterC  text- text-3xl opacity-90 ${project.textColor} ml-1 mb-2`}>
           {project.title}
         </h4>
-        <p className={`enterC ${project.textColor}  font-Satoshi  font-[800] text-9xl `}>{project.description}</p>
+        <p className={`enterC ${project.textColor}  font-Satoshi  font-bold text-9xl `}>{project.mainHeader}</p>
       </div>
     </div>
   );
