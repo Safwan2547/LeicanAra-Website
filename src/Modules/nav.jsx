@@ -36,19 +36,20 @@ const Navbar = () => {
 
     return (
         <nav className={`   appearance-none transition-opacity  ease-expo duration-1000 
-        flex align-middle justify-between  fixed top-5 left-5 right-5 sm:top-8 sm:mr-5 sm:ml-5 z-10`} >
+        flex align-middle justify-between fixed top-8 left-8 right-8 sm:left-5 sm:right-5 sm:top-8 sm:mr-5 sm:ml-5 z-10`} >
             
             <TransitionLink to="/" className=' opacity-0 navItem antialiased transform transition-button duration-500 hover:scale-105
              hover:text-LunarTwilight hover:animate-pulse-slow
-             buttonC font-Satoshi  text-xl sm:text-4xl ease-in-out   font-normal cursor-none'>
+             buttonC font-Satoshi text-4xl sm:text-4xl ease-in-out  font-normal cursor-none'>
               LeicanAra</TransitionLink>
             <div className="links flex justify-between items-center space-x-8">
-            <Link to="" className=' opacity-80 sm:hidden bg-none  text-white font-bold w-6 h-6 p-1 rounded-full relative'>
+            <Link to="" className=' navItem opacity-80 sm:hidden bg-none  text-white font-bold w-full flex justify-center align-middle items-center h-6  rounded-full relative'>
           
 
-            
-            <div className="absolute inset-x-0 top-1/2 bg-black h-0.5 w-5 transform -rotate-90"></div>
-            <div className="absolute inset-x-0 top-1/2 bg-black h-0.5 w-5 transform flex justify-between"></div>
+            <button className=' w-8'>
+            <div className="absolute inset-x-0 top-1/2 bg-black h-1 w-8 rounded-lg transform -rotate-90"></div>
+            <div className="absolute inset-x-0 top-1/2 bg-black h-1 w-8 rounded-lg transform flex justify-between"></div>
+            </button>
 
             
                 </Link>

@@ -93,6 +93,8 @@ const renderArrow = () => {
   return null;
 };
 
+
+
   return (
     
        
@@ -111,11 +113,12 @@ const renderArrow = () => {
       
       
       :''}
-       transition-cursor hidden sm:block !duration-300  bg-LunarTwilight  fixed rounded-full z-50` }
+        !opacity-100 transition-cursor hidden sm:block !duration-300  bg-LunarTwilight  fixed rounded-full z-50` }
       style={{
         pointerEvents: "none"
       }}
-    >{renderArrow()}</div>
+    >{renderArrow() } </div>
+    
     
   );
 }

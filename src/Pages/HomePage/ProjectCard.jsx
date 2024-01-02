@@ -39,7 +39,7 @@ const ProjectCard = ({ project }) => {
             {/* Render image or video  based on the project type */}
             {project.type === 'image' ? (
               <img loading='lazy' alt={project.alt}  src={project.thumbnail} className="
-               rounded-t object-cover overflow-hidden aspect-[1.85/1] cursor-none " />
+               rounded-t object-cover overflow-hidden max-w-full aspect-[1.85/1] cursor-none " />
             ) : (
               <video alt={project.alt} loading="lazy"
                 muted

@@ -82,7 +82,7 @@ function LandingPage() {
 <div className="z-1   w-screen h-screen absolute outline-none ">
           {/* Conditionally render the landing video based on showLandingVideo state */}
           {showLandingVideo && (
-            <video className="w-full  h-full absolute scale-[60%] border-none overflow-hidden object-cover hover:none" controls={false} autoPlay muted loop>
+            <video className="w-full  h-full absolute scale-90 sm:bottom-0 bottom-12  sm:scale-[60%] border-none overflow-hidden object-cover hover:none" controls={false} autoPlay muted loop>
               <source src={landingVid} type="video/mp4" />
               {/* You can add more source elements for different video formats (WebM, Ogg) */}
             </video>
@@ -91,15 +91,15 @@ function LandingPage() {
 
       
 
-          {/* This is the Mobile view */}            
-      <h1  className={`landingItem flex opacity-0 w-1/3 z-10 text-NightFall z-3   sm:absolute sm:top-0  
-         sm:hidden textC transition duration-200 text-left font-Satoshi text-5xl`}>
+          {/* This is the Mobile view */}       
+          <div className=' flex justify-center top-2/3 items-center  sm:hidden  absolute '>  
+      <h1  className={`landingItem1  text-6xl w-2/3 font-extralight  text-center  opacity-0 sm:w-1/3 z-10 text-NightFall   
+         sm:hidden textC transition duration-200 `}>
             StoryTellers for the Visionaries
           </h1>
           
-          <p className={`opacity-80  font-Lora pt-3  text-lg   sm:hidden w-2/3 `}>
-           
-          </p>
+         
+          </div>   
 
 
           {/* This is the Desktop view */}
@@ -112,8 +112,8 @@ function LandingPage() {
           </h1>
           
 
-          <h1   className={`hidden opacity-0 textP landingItem2  font-[300] font-Satoshi pl-2 
-           sm:text-3xl ml-2 mr-44 sm:block italic text-left  `}>
+          <h1   className={`hidden opacity-0 textP landingItem2  font-normal font-Satoshi pl-2 
+           sm:text-3xl ml-2 mr-44 sm:block  text-left  `}>
           We eliminate invisibility by crafting distinct creative ideas that resonate
 
            
