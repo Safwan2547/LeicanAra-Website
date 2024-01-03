@@ -24,7 +24,7 @@ const ProjectGrid = ({ projects }) => {
     <div id='gridClassWrap' className="w-[100%] flex justify-center  overflow-x-scroll items-center flex-wrap">
       <h1 className='text-NightFall text-6xl mb-8 sm:text-8xl'>Projects</h1>
       {/* Grid container for projects with specified columns, gap, and border */}
-      <div id='projectHolder' className=" sm:flex-col flex-row  relative flex overflow-x-scroll   gap-8 w-[95vw]  snap-mandatory snap-x   ">
+      <div id='projectHolder' className=" sm:flex-col flex-row  relative flex overflow-x-scroll overflow-y-hidden  gap-8 w-[95vw]  snap-mandatory snap-x   ">
 
         <div id='mobileScrollArrow' className=" sm:hidden left-1/2 top-1/2 z-10 sticky  " >
         <div className=' scale-150  animate-pulse-slow flex transition-opacity duration-500 justify-center w-full h-full items-center '>
@@ -37,7 +37,7 @@ const ProjectGrid = ({ projects }) => {
         
         {/* Map through the projects and render ProjectCard for each */}
         {projects.map((project) => (
-          <div className='  cursor-none flex-none mt-10  border-black snap-always snap-center ' key={project.key}>
+          <div className='  cursor-none flex-none mt-10 h-1/2  border-black snap-always snap-center ' key={project.key}>
             <ProjectCard project={project} />
           </div>
         ))}

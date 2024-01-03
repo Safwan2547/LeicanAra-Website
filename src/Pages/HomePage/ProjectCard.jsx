@@ -41,7 +41,7 @@ const checkIsMobile = () => {
 
   // Render the project card
   return (
-    <div className='watcher snap-start relative enterC w-full flex' >
+    <div className='watcher overflow-hidden w-full  h-full snap-start relative enterC  flex' >
       {/* Use TransitionLink component with the project's link */}
       <TransitionLink
         to={`/${project.key}`} 
@@ -49,13 +49,13 @@ const checkIsMobile = () => {
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
       >
-        <div className="enterC object-cover overflow-x-visible  rounded transition-all duration-300">
+        <div className="enterC object-cover overflow-x-visible   rounded transition-all duration-300">
           <div className={`relative enterC snap-center transition-all duration-[600ms] overflow-hidden`}>
             {/* Render image or video  based on the project type */}
             {
             isMobile===true?(
               <img loading='lazy' alt={project.alt}  src={project.thumbnailPort} className="
-               rounded-t object-cover overflow-hidden max-w-full w-[100vw] h-screen snap-center aspect-[1/2] sm:aspect-[1.85/1] cursor-none " />
+               rounded-t object-cover  w-[90vw]  snap-center aspect-[1/1.85] overflow-y-hidden cursor-none " />
             ) 
               :
             
