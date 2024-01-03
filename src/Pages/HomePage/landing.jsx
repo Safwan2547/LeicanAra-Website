@@ -93,7 +93,7 @@ function LandingPage() {
 
           {/* This is the Mobile view */}       
           <div className=' flex justify-center top-2/3 items-center  sm:hidden  absolute '>  
-      <h1  className={`landingItem1  text-6xl w-2/3 font-extralight  text-center  opacity-0 sm:w-1/3 z-10 text-NightFall   
+      <h1  className={`landingItem1  text-6xl w-3/4 font-extralight  text-center  opacity-0 sm:w-1/3 z-10 text-NightFall   
          sm:hidden textC transition duration-200 `}>
             StoryTellers for the Visionaries
           </h1>

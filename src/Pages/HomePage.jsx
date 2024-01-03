@@ -33,9 +33,9 @@ function HomePage() {
 
   // Rendering the HomePage component
   return (
-    <div className='bg-white'>
+    <div className='  bg-white'>
       {/* Container for Locomotive Scroll */}
-      <div ref={containerRef} data-scroll-container className="bg-white ">
+      <div ref={containerRef} className=" snap-center bg-white ">
         {/* LandingPage component */}
         
         <LandingPage />

@@ -10,12 +10,19 @@ const projects = [
       key:"starfall",
       title: 'StarFall',
       mainHeader: 'Humanity\'s future, Revolutionized.',
+      
       type: 'image',
       thumbnail: starFallPhoto,
+      
       thumbnailAlt:"image description",
       projectLink: '/ProjectPage',
       textColor:"text-MainBeige",
       services:"",
+
+      //Mobile Content
+      mainHeaderMobile:"Beyond the Stars",
+      thumbnailPort:LeicanAraPhoto,
+      textColorMobile:"",
 
     },
     {
@@ -24,6 +31,7 @@ const projects = [
       mainHeader: 'Stories that Bind us.',
       type: 'image',
       thumbnail: LeicanAraPhoto,
+      thumbnailPort:SvavaPhoto,
       projectLink: 'https://www.leicanAra.com',
       textColor:"text-[#21323e]"
     },
@@ -33,6 +41,7 @@ const projects = [
       mainHeader:'Skincare forever changed',
       type:'image',
       thumbnail:SvavaPhoto,
+      thumbnailPort:starFallPhoto,
       projectLink: 'https://www.starfallstudios.com/',
       textColor:"text-[#efece3]"
 
