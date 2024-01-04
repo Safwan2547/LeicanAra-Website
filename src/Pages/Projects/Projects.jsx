@@ -4,7 +4,8 @@ import starFallPhoto from "../../Assets/Container-Mockup.jpg"
 import LeicanAraPhoto from "../../Assets/Magazine.png"
 import SvavaPhoto from "../../Assets/Zen.jpg"
 import leicanAraPortrait from "../../Assets/portrait uw.png"
-import SvavaVideo from "../../Assets/WebsiteTest.mp4"
+import starFallvideo2 from "../../Assets/Laptop Mockup 1080 v2.mp4"
+
 
 
 const projects = [
@@ -36,11 +37,16 @@ const projects = [
       mainHeader: 'Stories that Bind us.',
       type: 'image',
       thumbnail: LeicanAraPhoto,
-      thumbnailPort:leicanAraPortrait,
+      
       projectLink: 'https://www.leicanAra.com',
       textColor:"text-[#21323e]",
+    
+
+      //mobile Content
+      mainHeaderMobile:"Stories that bind us",
       textColorMobile:"text-[#efece3]", 
       typeMobile:"image",
+      thumbnailPort:leicanAraPortrait,
     },
     {
       key:"svava",
