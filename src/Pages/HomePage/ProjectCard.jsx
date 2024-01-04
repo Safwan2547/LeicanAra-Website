@@ -12,31 +12,25 @@ const ProjectCard = ({ project }) => {
 
   // Check if the screen size is small enough to be considered mobile
 const checkIsMobile = () => {
-  setIsMobile(window.innerWidth <= 640); // Adjust the threshold as needed
+  const newIsMobile = window.innerWidth <= 640;
+    setIsMobile(newIsMobile);
+    console.log("ismobile? :" + newIsMobile);
+    console.log("window.innerWidth :" + window.innerWidth);
+  // Adjust the threshold as needed
 };
-
-  // Handle mouse movement to calculate position relative to the image's center
-  const handleMouseMove = (e) => {
-    const image = e.currentTarget.querySelector('.wobbling-image');
-    const imageRect = image.getBoundingClientRect();
-    const x = e.clientX - imageRect.left - imageRect.width / 2;
-    const y = e.clientY - imageRect.top - imageRect.height / 2;
-
-    // Update the mouse position state
-    setMousePosition({ x, y });
-  };
+  
   useEffect(() => {
     checkIsMobile();
+    console.log("Mounted")
+
+ 
     window.addEventListener('resize', checkIsMobile);
     return () => {
       window.removeEventListener('resize', checkIsMobile);
     };
   }, []);
 
-  // Reset mouse position when the mouse leaves the image
-  const handleMouseLeave = () => {
-    setMousePosition({ x: 0, y: 0 });
-  };
+  
 
 
   // Render the project card
@@ -46,23 +40,35 @@ const checkIsMobile = () => {
       <TransitionLink
         to={`/${project.key}`} 
         className="enterC"
-        onMouseMove={handleMouseMove}
-        onMouseLeave={handleMouseLeave}
+       
       >
         <div className="enterC object-cover overflow-x-visible   rounded transition-all duration-300">
           <div className={`relative enterC snap-center transition-all duration-[600ms] overflow-hidden`}>
             {/* Render image or video  based on the project type */}
             {
-            isMobile===true?(
+           (isMobile===true && project.typeMobile==='video')?(
+            <video 
+            muted
+            autoPlay
+            loop 
+            loading='lazy' alt={project.alt}  src={project.thumbnailPort}  type="video/mp4" className="
+             rounded-t object-cover  max-w-[90vw]  snap-center aspect-[1/1.85] overflow-y-hidden cursor-none " />
+
+          )
+          
+          :
+           
+           (isMobile===true && project.typeMobile==="image")?(
               <img loading='lazy' alt={project.alt}  src={project.thumbnailPort} className="
                rounded-t object-cover  w-[90vw]  snap-center aspect-[1/1.85] overflow-y-hidden cursor-none " />
             ) 
               :
             
-            project.type === 'image' ? (
+            (!isMobile && project.type === 'image') ? (
               <img loading='lazy' alt={project.alt}  src={project.thumbnail} className="
                rounded-t object-cover overflow-hidden max-w-full aspect-[1/2] sm:aspect-[1.85/1] cursor-none " />
             ) : 
+
             
             
             (
@@ -90,10 +96,10 @@ const checkIsMobile = () => {
       <div className="cursor-none enterC ml-10 mt-10 col-span-4 absolute">
         
 
-        <h4 className={`enterC  text-4xl sm:text-3xl opacity-90 ${project.textColor} ml-1 mb-2`}>
+        <h4 className={`enterC  text-4xl sm:text-3xl opacity-90 ${isMobile===true?(project.textColorMobile):(project.textColor)} ml-1 mb-2`}>
           {project.title}
         </h4>
-        <p className={`enterC ${project.textColor}  font-Satoshi  font-bold w-2/3 text-6xl 
+        <p className={`enterC ${isMobile===true?(project.textColorMobile):(project.textColor)}  font-Satoshi  font-bold w-2/3 text-6xl 
          text-pretty sm:text-9xl `}>{
          isMobile===true?(project.mainHeaderMobile):(
          project.mainHeader)}</p>
