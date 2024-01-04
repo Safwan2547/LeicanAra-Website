@@ -103,10 +103,10 @@ const renderArrow = () => {
       '!opacity-80 !w-0 !h-0 !bg-LunarTwilight'
 
       : hovering === 'text' ? 
-      '!opacity-80 !w-1 !h-24 !border-NightFall !bg-NightFall cursor-none'
+      '!opacity-80 !w-1 !h-24 !border-white border-[1px] !border-opacity-30 backdrop-invert !bg-NightFall cursor-none'
 
       : hovering === 'textP'? 
-      '!opacity-80 !w-1 !h-10 !border-NightFall !bg-NightFall cursor-none'
+      '!opacity-80 !w-1 !h-10 !border-white border-[1px] !border-opacity-30 !bg-NightFall cursor-none  '
       
       : hovering === 'enterC' ? 
       '!opacity-100 transition-all !border-opacity-95  drop-shadow-lg  !bg-MainBeige ease-in-out  !w-20 !h-20 !border-NightFall border-solid cursor-none'

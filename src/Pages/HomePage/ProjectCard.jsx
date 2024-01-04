@@ -99,7 +99,7 @@ const checkIsMobile = () => {
         <h4 className={`enterC  text-4xl sm:text-3xl opacity-90 ${isMobile===true?(project.textColorMobile):(project.textColor)} ml-1 mb-2`}>
           {project.title}
         </h4>
-        <p className={`enterC ${isMobile===true?(project.textColorMobile):(project.textColor)}  font-Satoshi  font-bold w-2/3 text-6xl 
+        <p className={`enterC ${isMobile===true?(project.textColorMobile):(project.textColor)}  font-Lora  font-bold w-2/3 text-6xl 
          text-pretty sm:text-9xl `}>{
          isMobile===true?(project.mainHeaderMobile):(
          project.mainHeader)}</p>

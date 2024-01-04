@@ -4,7 +4,7 @@ import instagram_logo from '../Assets/Instagram_Glyph_Black.svg';
 
 function Footer() {
   return (
-    <footer className="relative p-10 sm:p-10 flex justify-normal items-center  bg-NightFall text-nightfall py-24">
+    <footer className="relative p-10 sm:p-10 flex justify-normal items-center h-64 bg-NightFall text-nightfall py-24">
       <div className="container mx-auto flex justify-center items-center">
         {/* Braided star image */}
         {/* <div className="flex space-x-2 sm:justify-evenly sm:w-1/3">
@@ -13,7 +13,7 @@ function Footer() {
         
         {/* Text section */}
         <div className='text-MainBeige  sm:text-center sm:text-sm   items-center justify-start text-left sm:flex'>
-          <p className='w-2/3 sm:w-full' >Designed and Developed by LeicanAra<br />All Rights Reserved</p>
+          <p className='w-2/3 textP sm:w-full' >Designed and Developed by LeicanAra<br />All Rights Reserved</p>
         </div>
         
         {/* Footer icons */}

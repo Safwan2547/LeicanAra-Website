@@ -93,7 +93,7 @@ function LandingPage() {
 
           {/* This is the Mobile view */}       
           <div className=' flex justify-center top-2/3 items-center  sm:hidden  absolute '>  
-      <h1  className={`landingItem1  text-6xl w-3/4 font-extralight  text-center  opacity-0 sm:w-1/3 z-10 text-NightFall   
+      <h1  className={`landingItem1  text-6xl w-3/4 font-Lora font-light text-center  opacity-0 sm:w-1/3 z-10 text-NightFall   
          sm:hidden textC transition duration-200 `}>
             StoryTellers for the Visionaries
           </h1>
@@ -107,12 +107,12 @@ function LandingPage() {
           <div strength={100} className='opacity-100 landingItem mouseParallax text-NightFall hidden sm:flex  sm:absolute hover:text-LunarTwilight 
             transition-text duration-200 text-left   left-10 bottom-[10%] w-2/3 flex-col '>
 
-          <h1 data-scroll id='hero_line'  className={` textC mb-5 opacity-0 landingItem1 font-medium font-Satoshi sm:text-[128px] leading-none`}>
+          <h1 data-scroll id='hero_line'  className={` textC mb-5 opacity-0 landingItem1 font-light font-Lora sm:text-[128px] leading-none`}>
           Storytellers for the Visionaries
           </h1>
           
 
-          <h1   className={`hidden opacity-0 textP landingItem2  font-normal font-Satoshi pl-2 
+          <h1   className={`hidden opacity-0 textP landingItem2  font-[300] italic font-Satoshi pl-2 
            sm:text-3xl ml-2 mr-44 sm:block  text-left  `}>
           We eliminate invisibility by crafting distinct creative ideas that resonate
 
