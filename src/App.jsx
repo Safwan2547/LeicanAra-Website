@@ -14,7 +14,7 @@ import ProjectPage from './Pages/ProjectPage';
 function App() {
   return (
     <Router >
-    <div className=" snap-y snap-mandatory sm:m-0 appearance-none  ">
+    <div className=" snap-y snap-mandatory sm:m-0 bg-white appearance-none  ">
       {/* <Intro/> */}
       <Cursor />
       <Navbar />

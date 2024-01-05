@@ -21,12 +21,12 @@ function LandingPage() {
   const landingAnimations=[
     // Initial state: set opacity to 0
     [".navItem", { opacity: 0 }], 
-    [".landingItem1", { opacity: 0}],
-    [".landingItem2", { opacity: 0}],
+    [".landingItem1", { opacity: 0,y:100}],
+    [".landingItem2", { opacity: 0,y:100}],
     [".braidedStar", { opacity: 0}],  
     // Final state: set opacity to desired value
-    [".landingItem1",{ opacity: 1}, { duration: 0.2, easing:"ease-in-out"}],
-    [".landingItem2",{ opacity: 0.8}, { duration: 0.2, easing:"ease-in-out"}],
+    [".landingItem1",{ opacity: 1,y:0}, { duration: 1.5, easing:"cubic-bezier(.43,1.04,.58,.96)"}],
+    [".landingItem2",{ opacity: 0.8,y:0}, { duration: 1, easing:"cubic-bezier(.43,1.04,.58,.96)"}],
     [".navItem", { opacity: 1 }, { duration: 0.3, delay: stagger(0.2) }],
     
     [".braidedStar",{ opacity: 1}, { duration: 0.2,easing:"ease-out"}],
@@ -72,12 +72,15 @@ function LandingPage() {
     return (
       //wrapper
       <div   className=" ">
+        
       {/* <Parallax pages={3} ref={parallax} scrolling={true} horizontal={false} > */}
         
       <div  className={` transition-opacity overflow-hidden duration-1000 
        sm:ml-0 overflow-x-hidden flex flex-col 
        sm:flex-wrap justify-center  sm:items-center   sm:justify-items-start
        h-screen prose prose-sm lg:prose-xl text-MainBeige relative`}>
+
+
 
 <div className="z-1   w-screen h-screen absolute outline-none ">
           {/* Conditionally render the landing video based on showLandingVideo state */}
@@ -106,7 +109,7 @@ function LandingPage() {
          
           <div strength={100} className='opacity-100 landingItem mouseParallax text-NightFall hidden sm:flex  sm:absolute hover:text-LunarTwilight 
             transition-text duration-200 text-left   left-10 bottom-[10%] w-2/3 flex-col '>
-
+          
           <h1 data-scroll id='hero_line'  className={` textC mb-5 opacity-0 landingItem1 font-light font-Lora sm:text-[128px] leading-none`}>
           Storytellers for the Visionaries
           </h1>

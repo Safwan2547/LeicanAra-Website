@@ -25,7 +25,8 @@ font-family: 'Erode';
 }
 
 html{
-  background-color: #EFECE2;
+  background-color: #ffffff;
+  font:"Satoshi";
 }
 body::-webkit-scrollbar {
   display: none;

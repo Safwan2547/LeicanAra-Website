@@ -22,13 +22,17 @@ const projects = [
       projectLink: '/ProjectPage',
       textColor:"text-MainBeige",
   
-      services:"",
+      services:"Branding, Vision, ",
 
       //Mobile Content
       mainHeaderMobile:"Beyond the Stars",
       thumbnailPort:starFallVideo,
       textColorMobile:"text-[#efece3]",
-      typeMobile:"video"
+      typeMobile:"video",
+
+
+      //Project Page Content
+      ambitionHead:"To create a brand that inspires people to look beyond the stars and into the future.",
 
     },
     {
@@ -37,6 +41,7 @@ const projects = [
       mainHeader: 'Stories that Bind us.',
       type: 'image',
       thumbnail: LeicanAraPhoto,
+      services:"",
       
       projectLink: 'https://www.leicanAra.com',
       textColor:"text-[#21323e]",
